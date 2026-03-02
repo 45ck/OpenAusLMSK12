@@ -32,7 +32,22 @@ public class ModuleCatalogContractTests : IClassFixture<WebApplicationFactory<Pr
         using var document = JsonDocument.Parse(modulePayload);
         var root = document.RootElement;
         Assert.True(root.TryGetProperty("domain", out _));
-        Assert.True(root.GetProperty("capabilities").GetArrayLength() > 0);
+
+        var capabilities = root.GetProperty("capabilities");
+        Assert.True(capabilities.GetArrayLength() > 0);
+
+        var moduleSlugs = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var capability in capabilities.EnumerateArray())
+        {
+            Assert.True(capability.TryGetProperty("id", out var idElement));
+            Assert.True(!string.IsNullOrWhiteSpace(idElement.GetString()));
+            Assert.True(capability.TryGetProperty("name", out var nameElement));
+            Assert.True(!string.IsNullOrWhiteSpace(nameElement.GetString()));
+            Assert.True(capability.TryGetProperty("slug", out var slugElement));
+            var slug = slugElement.GetString();
+            Assert.NotNull(slug);
+            Assert.True(moduleSlugs.Add(slug));
+        }
     }
 
     [Fact]
@@ -84,3 +99,4 @@ public class ModuleCatalogContractTests : IClassFixture<WebApplicationFactory<Pr
         Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
     }
 }
+
