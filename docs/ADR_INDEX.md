@@ -112,6 +112,8 @@ Top-level planning and execution artifacts are normalized with ADR headers (ADR-
 - [ADR-104 Analytics Execution Package](adr/platform/ANALYTICS_EXECUTION_PACKAGE.md)
 - [ADR-105 AI Governance Execution Package](adr/trust/AI_GOVERNANCE_EXECUTION_PACKAGE.md)
 - [ADR-106 Execution Backlog And Workstream Sequencing](adr/platform/IMPLEMENTATION_BACKLOG_AND_WORKSTREAMS.md)
+- [ADR-107 Deployment Topology And Service Decomposition](adr/platform/DEPLOYMENT_TOPOLOGY_AND_DECOMPOSITION.md)
+- [ADR-108 API Strategy And GraphQL Scope](adr/platform/API_STRATEGY_AND_GRAPHQL_SCOPE.md)
 
 # Governance inspection reports are no longer retained in-repo; ADR governance is continuous via `ADR_INDEX.md` and `ADR_POLICY.md`.
 

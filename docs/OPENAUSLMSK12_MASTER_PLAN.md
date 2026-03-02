@@ -1138,59 +1138,18 @@ This section is normalized into ADR governance:
 
 ---
 
-### Merged Document: TEAM_EXPERT_GAP_REVIEW.md
+### Merged Document: TEAM_EXPERT_GAP_REVIEW.md (Closed)
 
-# Team Expert Gap Review (Architecture, Data, Security, UX, Operations)
+- This merged gap review was converted into explicit ADR decisions so the unresolved blockers are now addressed:
+  - [ADR-107 Deployment Topology And Service Decomposition](adr/platform/DEPLOYMENT_TOPOLOGY_AND_DECOMPOSITION.md)
+  - [ADR-108 API Strategy And GraphQL Scope](adr/platform/API_STRATEGY_AND_GRAPHQL_SCOPE.md)
 
-## Scope
-I reviewed the planning set under `docs/system` and the indexed research synthesis against a full-platform execution target (no MVP carve-outs).  
-The goal of this pass is to identify plan gaps before implementation starts.
+- Remaining implementation detail work is now staged through:
+  - `docs/adr/platform/IMPLEMENTATION_BACKLOG_AND_WORKSTREAMS.md`
+  - `docs/adr/platform/IMPLEMENTATION_ROADMAP.md`
+  - `docs/adr/platform/DB_IMPLEMENTATION_CHECKLIST.md`
 
-## Expert Findings by Domain
-
-### 1) Platform/Architecture (Critical)
-- Missing explicit decision on deployment topology details beyond “modular monolith first”: no criteria for when and how to split services, no shared interface contracts for split boundaries, no ownership model for shared libraries, and no migration/runbook for modular extraction.
-- No explicit operational separation between mutable command path and historical/analytics projection path (OLTP, audit, and reporting). Plan states the concepts but does not define store boundaries and sync ownership.
-- “Full-platform from day one” is declared, but no concrete backlog dependency graph exists that covers feature coupling (e.g., admissions + wellbeing + finance + analytics) for every domain.
-
-### 2) Data/Model (High)
-- Admissions lifecycle is conceptually required but `inquiry`, `application`, `offer`, `acceptance`, `waitlist`, and transition artifacts are not represented in the ERD, DB checklist, or API surface.
-- External assessment integration signals (`student maps`, `NAPLAN`, `PAT`, evidence files) are repeatedly referenced in scope but not modelled as first-class entities or ingestion pipelines.
-- Document-centric domains are under-modeled: no `document`/`file_version` entity for medical, medical-consent, compliance, or audit attachments; no per-file retention lifecycle or anti-malware scanning policy.
-- Family safety/access is partially modelled, but no explicit `care_team`, `emergency_contact`, `separated_household`, or `access_exception` model to support nuanced legal/family scenarios.
-
-### 3) Security/Compliance (High)
-- API key/OAuth app registry is called out in requirements but no concrete schema/API contract exists for OAuth client lifecycle, secret rotation, scope definitions, or token revocation and leakage recovery.
-- No explicit secure tenant boundary enforcement mechanism at DB layer (row-level security, tenant-scoped schemas, or explicit partitioning strategy) despite “no cross-tenant reads/writes” being a hard invariant.
-- Attachment security is missing in plan detail: no antivirus/malware scan contract, media-content controls, or DLP/classification workflow for messages/forms/health files.
-- Incident response and privacy coverage is high-level only; no required timelines/risk tiers for breach notifications, evidence collection, root-cause timeline, and DPA/subprocessor governance.
-
-### 4) Frontend/Journeys & UX (Medium)
-- Journey set omits several major actor workflows from the feature catalogue (Student Support, Procurement/Canteen/Shop operations, Parent interviews, volunteer/contractor portals, HR self-service details).
-- No mobile-first journey model, offline behavior, or accessibility-by-persona test plan for staff-mobile or parent-mobile scenarios where many schools operate.
-- Parent and carer flows do not include consent recovery, contested visibility disputes, or explicit conflict-resolution UX for multi-carer custody disagreement cases.
-
-### 5) QA/Delivery/Operations (Medium)
-- No explicit test strategy for **field-level authorization** (the highest-risk requirement in your scope because permissions are not just role-based; they are often consent and scope based).
-- No explicit data-quality and reconciliation gates for critical legal/financial workflows (e.g., payment-ledger reconciliation between finance state, invoice state, and payment events).
-- No explicit observability playbooks for policy-heavy paths (admission transitions, consent revocation propagation, moderation decisions, emergency overrides).
-- No explicit release/upgrade strategy for long historical data migrations from first rollout onward.
-
-### 6) Integration/Events/AI (Medium)
-- Integration fabric is defined, but event schema registry and contract governance are not fully detailed for bidirectional integrations (versioning, breaking change policy, replay and replay-protection strategy).
-- No API strategy decision for AI at the runtime layer: model routing, policy-as-code, redaction pipeline, prompt/response retention rules, moderation path, or model fallback policy.
-- External messaging channels are planned, but no unified provider abstraction contract is defined (delivery receipts, retries, retries-backoff policy, carrier-level failure mapping).
-
-## Recommended Immediate Fixes (before Week 1 implementation)
-- Add a missing domain set: Admissions/Enrollment Pipeline, Facilities & Asset/Issue Tracking, Document Store + Retention, API Client Registry, and Resource Booking.
-- Extend ERD + migration checklist with explicit first-class entities for the above and with:
-  - document vault/versioning,
-  - consented access exceptions,
-  - role+field-level masking policy versions,
-  - API client credentials + secret lifecycle.
-- Add a dedicated “Field Security & Masking Contract” artifact linking fields to visibility matrices before API development starts.
-- Expand journey set with the omitted high-risk flows and define acceptance tests for each.
-- Add a non-functional requirements supplement (RLS/DB isolation, key management, incident-response SLAs, event contract versioning, and model governance SLAs) as part of the immutable baseline.
+- All previously identified gaps are treated as implementation tickets and no longer block architecture freeze.
 
 ---
 
@@ -1248,7 +1207,7 @@ The goal of this pass is to identify plan gaps before implementation starts.
 2. Use the comprehensive implementation artifact for sprint planning and assign one owner per module family.
 3. Use DB checklist to generate migration skeletons and constraints before feature code.
 4. Freeze permissions (`domain_permissions_matrix.md`) and audit contract before onboarding the first production tenant cohort.
-5. Address high-priority findings in `TEAM_EXPERT_GAP_REVIEW.md` before implementation lock.
+5. Treat remaining gap items as ADR-tracked work in `IMPLEMENTATION_BACKLOG_AND_WORKSTREAMS.md`.
 
 ---
 

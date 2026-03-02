@@ -40,6 +40,8 @@ This file points to the active ADR set and remains here only for navigation.
 | Field-level permissions and route behavior | ADR-006, ADR-007 |
 | Documentation completion requirements | ADR-008 |
 | Stack baseline (frontend/backend/data/event queue/optional Rust) | ADR-010 |
+| Deployment and decomposition governance | ADR-107 |
+| API surface strategy / GraphQL scope | ADR-108 |
 
 
 
