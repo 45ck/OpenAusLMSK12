@@ -384,7 +384,7 @@ The following plan combines all domain experts and current repository design doc
 6. Release runbook and SLO dashboard configuration (`ops/runbooks.md`).
 
 ## 11) Immediate Next Actions (this week)
-1. Generate the 18+ issue module backlog from this document.
+1. Execute from [ADR-106 Execution Backlog And Workstream Sequencing](adr/platform/IMPLEMENTATION_BACKLOG_AND_WORKSTREAMS.md), with the 18+ issue module backlog already split by waves.
 2. Freeze role/permission matrix and consent rules.
 3. Create OpenAPI v1 shell for core modules.
 4. Start DB wave A migration and API scaffold.
@@ -956,6 +956,7 @@ This section is normalized into ADR governance:
   - `ADR-103 Integration Fabric Execution Package`
   - `ADR-104 Analytics Execution Package`
   - `ADR-105 AI Governance Execution Package`
+  - `ADR-106 Execution Backlog And Workstream Sequencing`
 
 ## Onboarding Journey
 ### 1) Tenant and School Setup

@@ -111,6 +111,7 @@ Top-level planning and execution artifacts are normalized with ADR headers (ADR-
 - [ADR-103 Integration Fabric Execution Package](adr/integration/INTEGRATION_FABRIC_EXECUTION_PACKAGE.md)
 - [ADR-104 Analytics Execution Package](adr/platform/ANALYTICS_EXECUTION_PACKAGE.md)
 - [ADR-105 AI Governance Execution Package](adr/trust/AI_GOVERNANCE_EXECUTION_PACKAGE.md)
+- [ADR-106 Execution Backlog And Workstream Sequencing](adr/platform/IMPLEMENTATION_BACKLOG_AND_WORKSTREAMS.md)
 
 # Governance inspection reports are no longer retained in-repo; ADR governance is continuous via `ADR_INDEX.md` and `ADR_POLICY.md`.
 
