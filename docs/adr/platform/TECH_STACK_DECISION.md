@@ -14,8 +14,8 @@ This file is normalized into ADR format to keep the documentation set clean and 
 ## Authoritative Source
 
 The canonical stack decision is now recorded in:
-- [ADR-001 Backend Runtime Choice](core/ADR-001-backend-runtime-choice.md)
-- [ADR-010 Platform Stack Baseline](core/ADR-010-platform-stack-baseline.md)
+- [ADR-001 Backend Runtime Choice](../core/ADR-001-backend-runtime-choice.md)
+- [ADR-010 Platform Stack Baseline](../core/ADR-010-platform-stack-baseline.md)
 
 ## Summary
 - Backend phase-1: `.NET 8 (C#)` in monolithic implementation.

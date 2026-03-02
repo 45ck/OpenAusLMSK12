@@ -18,9 +18,9 @@ This file is normalized into ADR format to keep the documentation set clean and 
 ## Phase 1: Foundation Lock (Weeks 1-2)
 
 - Apply `TECH_STACK_DECISION.md` and accepted ADRs:
-  - [ADR-001](core/ADR-001-backend-runtime-choice.md)
-  - [ADR-009](core/ADR-009-architecture-governance-baseline.md)
-  - [ADR-010](core/ADR-010-platform-stack-baseline.md)
+  - [ADR-001](../core/ADR-001-backend-runtime-choice.md)
+  - [ADR-009](../core/ADR-009-architecture-governance-baseline.md)
+  - [ADR-010](../core/ADR-010-platform-stack-baseline.md)
 - Implement tenant, school, year, year_level, person, user_account, student, staff, carer.
 - Implement household, custody, consent, admissions_application, and enrolment tables.
 - Enable document vault baseline (`document`, `document_version`, `document_scan`, `document_retention_state`).

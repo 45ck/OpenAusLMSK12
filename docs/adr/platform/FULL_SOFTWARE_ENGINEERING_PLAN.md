@@ -50,8 +50,8 @@ depend on cross-domain integrity.
   domain modules as route groups.
 - Backend: strongly-typed API layer and service modules in a modular monolith style.
   Runtime lock is governed by:
-  - [ADR-001 Backend Runtime Choice](core/ADR-001-backend-runtime-choice.md)
-  - [ADR-010 Platform Stack Baseline](core/ADR-010-platform-stack-baseline.md)
+  - [ADR-001 Backend Runtime Choice](../core/ADR-001-backend-runtime-choice.md)
+  - [ADR-010 Platform Stack Baseline](../core/ADR-010-platform-stack-baseline.md)
 - Data:
   - PostgreSQL for core state
   - Redis for cache/locking/queues where required

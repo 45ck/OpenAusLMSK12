@@ -11,7 +11,7 @@
 This file is normalized into ADR format to keep the documentation set clean and indexable under the ADR-first workflow.
 # OpenAusLMSK12 System Blueprint
 
-OpenAusLMSK12 combines SIS, LMS, operations, wellbeing, finance, workforce, and integrations into one modular monolith for phase 1 (core/ADR-009-architecture-governance-baseline.md)).
+OpenAusLMSK12 combines SIS, LMS, operations, wellbeing, finance, workforce, and integrations into one modular monolith for phase 1, with architecture references in [ADR-009](../core/ADR-009-architecture-governance-baseline.md).
 
 ## Blueprint Principles
 
@@ -39,8 +39,8 @@ OpenAusLMSK12 combines SIS, LMS, operations, wellbeing, finance, workforce, and 
 
 ## Architecture Baseline
 
-- Backend runtime: `.NET 8` modular monolith (until measurable thresholds justify isolation), per [ADR-001](core/ADR-001-backend-runtime-choice.md) and [ADR-010](core/ADR-010-platform-stack-baseline.md).
-- Frontend runtime: TypeScript web shell with role/route scoped rendering, per [ADR-010](core/ADR-010-platform-stack-baseline.md).
+- Backend runtime: `.NET 8` modular monolith (until measurable thresholds justify isolation), per [ADR-001](../core/ADR-001-backend-runtime-choice.md) and [ADR-010](../core/ADR-010-platform-stack-baseline.md).
+- Frontend runtime: TypeScript web shell with role/route scoped rendering, per [ADR-010](../core/ADR-010-platform-stack-baseline.md).
 - Data: PostgreSQL + Redis + object storage with scan-retention workflows.
 - Async: Outbox/inbox for webhook reliability and workflow compensations.
 

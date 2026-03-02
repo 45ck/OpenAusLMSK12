@@ -83,9 +83,9 @@ All business modules read/write from the same authoritative model while owning t
 6. Advanced analytics, integrations, and governance automation.
 
 ## How to Read This Blueprint
-- Use `erd_and_data_model.md` first for domain contracts.
-- Use `user_journeys.md` for persona behavior and UX priorities.
-- Use `implementation_roadmap.md` for sequencing and acceptance.
+- Use `ERD_AND_DATA_MODEL.md` first for domain contracts.
+- Use `ADR-091 User Journey Execution Governance` and `ADR-085 Web Journey Map And Navigation Matrix` for persona behavior and UX priorities.
+- Use `IMPLEMENTATION_ROADMAP.md` for sequencing and acceptance.
 
 ## Immediate First Tasks for this Project
 1. Approve domain model and governance matrix.
@@ -113,7 +113,9 @@ The following plan combines all domain experts and current repository design doc
 - `IMPLEMENTATION_ROADMAP.md` (merged into this plan)
 - `COMPREHENSIVE_IMPLEMENTATION_ARTIFACT.md` (merged into this plan)
 - `OPENAUSLMSK12_SYSTEM_BLUEPRINT.md` (merged into this plan)
-- `USER_JOURNEYS.md` (merged into this plan)
+- `USER_JOURNEY_EXECUTION_GOVERNANCE.md` (merged into this plan)
+- `LOW_FIDELITY_PROTOTYPING_STANDARD.md` (merged into this plan)
+- `DIGITAL_MODELING_STANDARD.md` (merged into this plan)
 
 ## 2) Team-of-Experts Working Set
 1. Architecture and platform boundaries
@@ -696,7 +698,9 @@ Derived from:
 - `OPENAUSLMSK12_SYSTEM_BLUEPRINT.md`
 - `ERD_AND_DATA_MODEL.md`
 - `IMPLEMENTATION_ROADMAP.md`
-- `USER_JOURNEYS.md`
+- `USER_JOURNEY_EXECUTION_GOVERNANCE.md`
+- `LOW_FIDELITY_PROTOTYPING_STANDARD.md`
+- `DIGITAL_MODELING_STANDARD.md`
 - `GOVERNANCE_AND_OPERATIONS.md`
 
 ## 1) Starter API Surface (Grouped by Module)
@@ -925,18 +929,14 @@ Derived from:
 
 ---
 
-### Merged Document: USER_JOURNEYS.md
+### Merged Document: USER_JOURNEY EXECUTION GOVERNANCE
 
-# OpenAusLMSK12 User Journeys
+# User Journey, Prototype, and Diagram Governance
 
-## Primary Personas
-- Student
-- Parent/Carer
-- Teacher
-- School Admin
-- Principal
-- Support Staff
-- Student Services / Wellbeing Team
+This section is normalized into ADR governance:
+- Journey sequencing and ownership: `ADR-091 User Journey Execution Governance`
+- Prototype/package requirements: `ADR-092 Low Fidelity Prototyping Standard`
+- Diagram standards: `ADR-093 Digital Modeling Standard`
 
 ## Onboarding Journey
 ### 1) Tenant and School Setup
@@ -1235,7 +1235,7 @@ The goal of this pass is to identify plan gaps before implementation starts.
 ## Research References
 
 ### Research Toolkit
-- [deep_research_agent_kit.md](cross-cutting/deep_research_agent_kit.md)
+- [deep_research_agent_kit.md](adr/cross-cutting/deep_research_agent_kit.md)
 
 ### Comprehensive Research Discovery
 - [COMPREHENSIVE_PLAN_RESEARCH_DISCOVERY.md](COMPREHENSIVE_PLAN_RESEARCH_DISCOVERY.md)
