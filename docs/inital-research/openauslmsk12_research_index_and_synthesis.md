@@ -109,7 +109,7 @@ Ship as a modular architecture with Foundation + Community Data Hub first, then 
 ## System Documentation Set
 1. [OPENAUSLMSK12_MASTER_PLAN.md](../OPENAUSLMSK12_MASTER_PLAN.md)
 2. [COMPREHENSIVE_PLAN_RESEARCH_DISCOVERY.md](../COMPREHENSIVE_PLAN_RESEARCH_DISCOVERY.md)
-3. [Full coverage and execution plan (in master plan)](../OPENAUSLMSK12_MASTER_PLAN.md#research-references)
+3. [Full coverage and execution plan (in master plan)](../OPENAUSLMSK12_MASTER_PLAN.md)
 
 
 ## Team Review Execution Pack

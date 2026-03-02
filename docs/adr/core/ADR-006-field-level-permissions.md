@@ -18,6 +18,6 @@ Introduce explicit field-level sensitivity tags and route-specific permission en
 - UI receives `field_redacted` metadata and can render compliant fallbacks.
 
 ## Action
-`domain_permissions_matrix.md` is no longer draft-only; pending decisions now resolved via `field_level_permissions_contract.md`.
+`domain_permissions_matrix.md` is no longer draft-only; pending decisions now resolved via [ADR-109: Field Permissions Mask Contract](./ADR-109-field-permissions-mask-contract.md).
 
 

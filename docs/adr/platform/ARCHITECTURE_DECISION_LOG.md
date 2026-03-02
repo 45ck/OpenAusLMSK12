@@ -38,6 +38,7 @@ This file points to the active ADR set and remains here only for navigation.
 | API client and OAuth lifecycle governance | ADR-004 |
 | Tenant isolation proof | ADR-005 |
 | Field-level permissions and route behavior | ADR-006, ADR-007 |
+| Field masking and redaction policy | ADR-109 |
 | Documentation completion requirements | ADR-008 |
 | Stack baseline (frontend/backend/data/event queue/optional Rust) | ADR-010 |
 | Deployment and decomposition governance | ADR-107 |
