@@ -1,14 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap');
+
 body {
   margin: 0;
-  font-family: Inter, system-ui, sans-serif;
-  background: #0b1220;
+  font-family: 'Manrope', Inter, system-ui, sans-serif;
+  background: radial-gradient(circle at top, #13213d, #050914 58%);
   color: #f8fafc;
 }
 
 main {
   padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main {
+  min-height: 100vh;
 }
 
 a {
   color: #7dd3fc;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(125, 211, 252, 0.2);
+  position: sticky;
+  top: 0;
+  background: rgba(11, 18, 32, 0.95);
+  backdrop-filter: blur(6px);
+}
+
+.landing {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.16rem;
+  color: #93c5fd;
+  font-size: 0.85rem;
+}
+
+.cta-row a {
+  display: inline-block;
+  margin-top: 0.7rem;
+  padding: 0.65rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.65);
+  padding: 1rem 1.2rem;
+}
+
+.journey-card {
+  border: 1px solid rgba(125, 211, 252, 0.25);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  background: linear-gradient(180deg, rgba(14, 116, 144, 0.08), transparent);
+}
+
+ol,
+ul {
+  margin: 0;
 }

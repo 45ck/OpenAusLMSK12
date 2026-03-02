@@ -1,7 +1,7 @@
 {
   "version": "0.2",
   "language": "en",
-  "dictionaries": ["en_US", "typescript", "node", "npm", "softwareTerms"],
+  "dictionaries": ["en_US", "typescript", "node", "npm", "softwareTerms", "project-words"],
   "dictionaryDefinitions": [
     {
       "name": "project-words",

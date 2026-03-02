@@ -18,6 +18,7 @@
     "mutation": "echo 'No mutation tests configured yet.'"
   },
   "dependencies": {
+    "@45ck/openauslmsk12-contracts": "file:../../packages/domain-contracts",
     "next": "^14.2.16",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
