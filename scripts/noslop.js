@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { existsSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, dirname } from 'node:path';
 import { spawnSync } from 'node:child_process';
 
 const args = process.argv.slice(2);
@@ -9,19 +9,20 @@ const local = [join(process.cwd(), 'node_modules', '.bin', 'noslop'), join(proce
 const localNoslop = local.find((file) => existsSync(file));
 
 const npmPackage = '@45ck/noslop';
-const npmFallbackCommand = process.env.npm_execpath
-  ? [process.execPath, process.env.npm_execpath, 'exec', '--yes', '--', npmPackage, ...args]
-  : [
-      process.platform === 'win32' ? 'npm.cmd' : 'npm',
-      'exec',
-      '--yes',
-      '--',
-      npmPackage,
-      ...args,
-    ];
+const npmExecPath = process.env.npm_execpath && existsSync(process.env.npm_execpath)
+  ? process.env.npm_execpath
+  : join(dirname(process.execPath), 'node_modules', 'npm', 'bin', 'npm-cli.js');
+const hasNpmExec = existsSync(npmExecPath);
 
-const command = localNoslop ?? npmFallbackCommand[0];
-const commandArgs = localNoslop ? args : npmFallbackCommand.slice(1);
+const fallbackCommand = hasNpmExec
+  ? {
+      command: process.execPath,
+      args: [npmExecPath, 'exec', '--yes', '--', npmPackage, ...args],
+    }
+  : null;
+
+const command = localNoslop ?? (fallbackCommand?.command);
+const commandArgs = localNoslop ? args : fallbackCommand?.args;
 const usingNpmFallback = !localNoslop;
 
 const run = (cmd, cmdArgs) => {
@@ -35,6 +36,13 @@ const run = (cmd, cmdArgs) => {
 const formatOutput = (result) => `[stdout]\n${result.stdout ?? ''}\n[stderr]\n${result.stderr ?? ''}`;
 
 if (usingNpmFallback) {
+  if (!fallbackCommand) {
+    console.error(
+      'Could not resolve local npm executable path. Install noslop locally via npm or add a local noslop binary.',
+    );
+    process.exit(1);
+  }
+
   const result = run(command, commandArgs);
 
   if (result.error) {
