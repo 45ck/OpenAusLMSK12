@@ -950,6 +950,12 @@ This section is normalized into ADR governance:
   - `ADR-097 Finance and Services Execution Package`
   - `ADR-098 Operations and Events Execution Package`
   - `ADR-099 Wellbeing and Guardianship Execution Package`
+  - `ADR-100 Communications Execution Package`
+  - `ADR-101 Forms and Workflow Execution Package`
+  - `ADR-102 Workforce Execution Package`
+  - `ADR-103 Integration Fabric Execution Package`
+  - `ADR-104 Analytics Execution Package`
+  - `ADR-105 AI Governance Execution Package`
 
 ## Onboarding Journey
 ### 1) Tenant and School Setup

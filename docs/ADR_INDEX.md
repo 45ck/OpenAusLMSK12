@@ -105,6 +105,12 @@ Top-level planning and execution artifacts are normalized with ADR headers (ADR-
 - [ADR-097 Finance And Services Execution Package](adr/finance/FINANCE_AND_SERVICES_EXECUTION_PACKAGE.md)
 - [ADR-098 Operations And Events Execution Package](adr/operations/OPERATIONS_EVENTS_EXECUTION_PACKAGE.md)
 - [ADR-099 Wellbeing And Guardianship Execution Package](adr/trust/WELLBEING_AND_GUARDIANSHIP_EXECUTION_PACKAGE.md)
+- [ADR-100 Communications Execution Package](adr/communications/COMMUNICATIONS_EXECUTION_PACKAGE.md)
+- [ADR-101 Forms And Workflow Execution Package](adr/cross-cutting/FORMS_AND_WORKFLOW_EXECUTION_PACKAGE.md)
+- [ADR-102 Workforce Execution Package](adr/workforce/WORKFORCE_EXECUTION_PACKAGE.md)
+- [ADR-103 Integration Fabric Execution Package](adr/integration/INTEGRATION_FABRIC_EXECUTION_PACKAGE.md)
+- [ADR-104 Analytics Execution Package](adr/platform/ANALYTICS_EXECUTION_PACKAGE.md)
+- [ADR-105 AI Governance Execution Package](adr/trust/AI_GOVERNANCE_EXECUTION_PACKAGE.md)
 
 # Governance inspection reports are no longer retained in-repo; ADR governance is continuous via `ADR_INDEX.md` and `ADR_POLICY.md`.
 
