@@ -22,11 +22,12 @@
     "ci": "npm run ci:workspaces && npm run ci:backend",
     "ci:workspaces": "npm run format:check --workspaces --if-present && npm run lint --workspaces --if-present && npm run spell --workspaces --if-present && npm run typecheck --workspaces --if-present && npm run test:coverage --workspaces --if-present",
     "ci:backend": "node ./scripts/ci-backend.js",
-    "noslop:check": "npx --yes github:45ck/noslop check --tier=fast || npm run ci:workspaces",
-    "noslop:doctor": "npx --yes github:45ck/noslop doctor || echo \"noslop not available remotely; gate files should be present in repo.\"",
-    "noslop:fast": "npx --yes github:45ck/noslop check --tier=fast || (npm run format:check && npm run lint && npm run spell)",
-    "noslop:slow": "npx --yes github:45ck/noslop check --tier=slow || (npm run typecheck && npm run test)",
-    "noslop:ci": "npx --yes github:45ck/noslop check --tier=ci || npm run ci"
+    "noslop": "node ./scripts/noslop.js",
+    "noslop:check": "node ./scripts/noslop.js check --tier=fast || npm run ci:workspaces",
+    "noslop:doctor": "node ./scripts/noslop.js doctor || echo \"noslop unavailable; gate files should be present in repo.\"",
+    "noslop:fast": "node ./scripts/noslop.js check --tier=fast || (npm run format:check && npm run lint && npm run spell)",
+    "noslop:slow": "node ./scripts/noslop.js check --tier=slow || (npm run typecheck && npm run test)",
+    "noslop:ci": "node ./scripts/noslop.js check --tier=ci || npm run ci"
   },
   "devDependencies": {
     "@types/node": "^22.8.0"
