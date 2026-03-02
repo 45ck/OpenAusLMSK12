@@ -23,7 +23,7 @@ public class ModuleCatalogContractTests : IClassFixture<WebApplicationFactory<Pr
     }
 
     [Fact]
-    public async Task ModuleCatalogEndpointsReturnExpectedStatus()
+    public async Task ModuleCatalogRoutesReturnExpectedShape()
     {
         var v1Response = await _client.GetAsync(new Uri("/api/v1/modules", UriKind.Relative));
         Assert.Equal(HttpStatusCode.OK, v1Response.StatusCode);
@@ -33,6 +33,31 @@ public class ModuleCatalogContractTests : IClassFixture<WebApplicationFactory<Pr
         var root = document.RootElement;
         Assert.True(root.TryGetProperty("domain", out _));
         Assert.True(root.GetProperty("capabilities").GetArrayLength() > 0);
+    }
+
+    [Fact]
+    public async Task ModuleCatalogRoutesHandleSlugCaseInsensitively()
+    {
+        var lowercase = await _client.GetAsync(new Uri("/api/v1/modules/Foundation", UriKind.Relative));
+        Assert.Equal(HttpStatusCode.OK, lowercase.StatusCode);
+
+        var uppercase = await _client.GetAsync(new Uri("/api/v1/modules/FOUNDATION", UriKind.Relative));
+        Assert.Equal(HttpStatusCode.OK, uppercase.StatusCode);
+
+        Assert.Equal(await lowercase.Content.ReadAsStringAsync(), await uppercase.Content.ReadAsStringAsync());
+    }
+
+    [Fact]
+    public async Task ModuleJourneyRouteReturnsJourneyPayload()
+    {
+        var journeyPayload = await _client.GetAsync(new Uri("/api/v1/modules/foundation/journeys", UriKind.Relative));
+        Assert.Equal(HttpStatusCode.OK, journeyPayload.StatusCode);
+
+        var content = await journeyPayload.Content.ReadAsStringAsync();
+        using var document = JsonDocument.Parse(content);
+        var root = document.RootElement;
+        Assert.Equal(JsonValueKind.Array, root.ValueKind);
+        Assert.NotEmpty(root.EnumerateArray());
     }
 
     [Fact]
