@@ -58,6 +58,10 @@ public class ModuleCatalogContractTests : IClassFixture<WebApplicationFactory<Pr
         var root = document.RootElement;
         Assert.Equal(JsonValueKind.Array, root.ValueKind);
         Assert.NotEmpty(root.EnumerateArray());
+        var firstItem = root[0];
+        Assert.True(firstItem.TryGetProperty("id", out _));
+        Assert.True(firstItem.TryGetProperty("title", out _));
+        Assert.True(firstItem.TryGetProperty("sampleSteps", out _));
     }
 
     [Fact]
@@ -71,5 +75,12 @@ public class ModuleCatalogContractTests : IClassFixture<WebApplicationFactory<Pr
 
         var missing = await _client.GetAsync(new Uri("/api/v1/modules/not-a-real-module", UriKind.Relative));
         Assert.Equal(HttpStatusCode.NotFound, missing.StatusCode);
+    }
+
+    [Fact]
+    public async Task ModuleJourneyLookupReturnsNotFoundForUnknownSlug()
+    {
+        var response = await _client.GetAsync(new Uri("/api/v1/modules/not-a-real-module/journeys", UriKind.Relative));
+        Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
     }
 }
