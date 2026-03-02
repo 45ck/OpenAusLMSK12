@@ -1,0 +1,16 @@
+coverage
+coverage/**
+dist
+dist/**
+build
+build/**
+node_modules
+node_modules/**
+package-lock.json
+obj
+obj/**
+bin
+bin/**
+*.log
+*.tmp
+*.swp

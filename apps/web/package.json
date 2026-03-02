@@ -1,0 +1,37 @@
+{
+  "name": "@45ck/openauslmsk12-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenAusLMSK12 web shell (phase 1)",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "spell": "cspell --no-progress --config ../../.cspell.json src ./*.md",
+    "test": "vitest run --passWithNoTests",
+    "test:coverage": "vitest run --passWithNoTests",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "mutation": "echo 'No mutation tests configured yet.'"
+  },
+  "dependencies": {
+    "next": "^14.2.16",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.3",
+    "cspell": "^8.16.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.35",
+    "prettier": "^3.4.1",
+    "@vitest/coverage-v8": "^2.1.4",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
+}

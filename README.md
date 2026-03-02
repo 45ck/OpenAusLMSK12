@@ -1,14 +1,48 @@
 # OpenAusLMSK12
 
-OpenAusLMSK12 is an open-source planning and architecture repository for building an open, auditable Australian K-12 School Management System and LMS platform.
+OpenAusLMSK12 is an open, auditable Australian K-12 school management + LMS platform blueprint moving toward implementation.
 
-## Project status
+This repository is now a **monorepo** with:
 
-This repository currently contains:
+- `apps/backend`: .NET 8 modular monolith API scaffold
+- `apps/web`: Next.js frontend scaffold
+- `packages/domain-contracts`: shared TypeScript contract package
+- `docs/`: ADR-led architecture, implementation, and research corpus
 
-- A consolidated architecture planning corpus in ADR format.
-- Implementation planning for people, attendance, learning, finance, operations, integration, and governance domains.
-- Initial research synthesis and source references for system design.
+## Development setup
+
+- Install Node.js 22+ and .NET SDK 8.x.
+- From repo root:
+
+```sh
+npm install
+npm run dev
+```
+
+The monorepo is designed around workspaces, with these key scripts:
+
+- `npm run build` — build workspace projects
+- `npm run lint` — lint workspace projects
+- `npm run test` — run workspace tests
+- `npm run format:check` — formatting check
+- `npm run noslop:doctor` — verify gate enforcement files and hooks
+
+## Quality gates (45ck/noslop)
+
+This repo is configured with [45ck/noslop](https://github.com/45ck/noslop) guardrails:
+
+- `.githooks/` for pre-commit/pre-push/commit-msg enforcement
+- `.github/workflows/quality.yml` for CI quality
+- `.claude/settings.json` and `.claude/hooks/pre-tool-use.sh` for command restrictions
+
+Hooks are enforced by this repo layout, and gate commands are available via script aliases:
+
+```sh
+npm run noslop:check
+npm run noslop:fast
+npm run noslop:slow
+npm run noslop:doctor
+```
 
 ## Documentation
 
@@ -17,14 +51,6 @@ This repository currently contains:
 - [ADR Policy](docs/ADR_POLICY.md)
 - [Research corpus](docs/COMPREHENSIVE_PLAN_RESEARCH_DISCOVERY.md)
 - [Initial Research Set](docs/inital-research/)
-
-## Design approach
-
-The repository follows an ADR-first engineering model:
-
-- Major technical decisions are captured as ADRs.
-- Cross-cutting implementation guidance is centralised.
-- Research-linked evidence is retained for design traceability.
 
 ## Contributing
 

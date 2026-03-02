@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #0b1220;
+  color: #f8fafc;
+}
+
+main {
+  padding: 2rem;
+}
+
+a {
+  color: #7dd3fc;
+}

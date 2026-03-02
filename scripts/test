@@ -1,0 +1,3 @@
+#!/bin/sh
+# noslop test
+npm run test
