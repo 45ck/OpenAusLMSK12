@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E2E4D9A1B}") = "OpenAusLMSK12.Api", "src\OpenAusLMSK12.Api\OpenAusLMSK12.Api.csproj", "{D1C31A6F-6B56-45B2-B5DE-1F2D7B8AC7E9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1715FC4C-309D-4A77-8410-3C0A39EC314C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAusLMSK12.Api.Tests", "tests\OpenAusLMSK12.Api.Tests\OpenAusLMSK12.Api.Tests.csproj", "{7F18D59D-C74B-4FFE-8D49-3172531B04FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,5 +19,12 @@ Global
 		{D1C31A6F-6B56-45B2-B5DE-1F2D7B8AC7E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1C31A6F-6B56-45B2-B5DE-1F2D7B8AC7E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1C31A6F-6B56-45B2-B5DE-1F2D7B8AC7E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F18D59D-C74B-4FFE-8D49-3172531B04FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F18D59D-C74B-4FFE-8D49-3172531B04FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F18D59D-C74B-4FFE-8D49-3172531B04FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F18D59D-C74B-4FFE-8D49-3172531B04FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F18D59D-C74B-4FFE-8D49-3172531B04FB} = {1715FC4C-309D-4A77-8410-3C0A39EC314C}
 	EndGlobalSection
 EndGlobal
