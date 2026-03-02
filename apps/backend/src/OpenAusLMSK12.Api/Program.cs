@@ -2,7 +2,6 @@ using System.Text.Json;
 using OpenAusLMSK12.Api.Modules;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddOpenApi();
 builder.Services.ConfigureHttpJsonOptions(options =>
 {
     options.SerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
@@ -17,11 +16,6 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 app.UseCors();
-
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
 
 app.MapGet("/", () => new
 {
@@ -44,8 +38,8 @@ app.MapGet("/api/v1/health", () => new
 static void MapModuleCatalogRoutes(IEndpointRouteBuilder routeBuilder, string apiPrefix)
 {
     routeBuilder.MapGet($"{apiPrefix}/modules", () => DomainModuleCatalog.Catalog);
-    routeBuilder.MapGet($"{apiPrefix}/modules/{slug}", (string slug) => DomainModuleCatalog.GetModuleBySlug(slug));
-    routeBuilder.MapGet($"{apiPrefix}/modules/{slug}/journeys", (string slug) =>
+    routeBuilder.MapGet($"{apiPrefix}/modules/{{slug}}", (string slug) => DomainModuleCatalog.GetModuleBySlug(slug));
+    routeBuilder.MapGet($"{apiPrefix}/modules/{{slug}}/journeys", (string slug) =>
     {
         var payload = DomainModuleCatalog.Catalog.Capabilities.FirstOrDefault(module =>
             string.Equals(module.Slug, slug, StringComparison.OrdinalIgnoreCase));
@@ -67,4 +61,4 @@ static void MapModuleCatalogRoutes(IEndpointRouteBuilder routeBuilder, string ap
 MapModuleCatalogRoutes(app, "/api/v1");
 MapModuleCatalogRoutes(app, "/api");
 
-app.Run();
+await app.RunAsync().ConfigureAwait(false);

@@ -1,6 +1,6 @@
 namespace OpenAusLMSK12.Api.Modules;
 
-public record ModuleJourney(string Id, string Title, string Summary, string[] SampleSteps);
+public record ModuleJourney(string Id, string Title, string Summary, IReadOnlyList<string> SampleSteps);
 
 public record ModuleCapability(
     string Id,
@@ -8,11 +8,11 @@ public record ModuleCapability(
     string Slug,
     string Description,
     string Stage,
-    string[] CriticalUserPaths,
-    ModuleJourney[] Journey
+    IReadOnlyList<string> CriticalUserPaths,
+    IReadOnlyList<ModuleJourney> Journey
 );
 
-public record PlatformModuleCatalog(string Domain, ModuleCapability[] Capabilities);
+public record PlatformModuleCatalog(string Domain, IReadOnlyList<ModuleCapability> Capabilities);
 
 public static class DomainModuleCatalog
 {
