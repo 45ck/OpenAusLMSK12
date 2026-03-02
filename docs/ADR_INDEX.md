@@ -115,6 +115,7 @@ Top-level planning and execution artifacts are normalized with ADR headers (ADR-
 - [ADR-107 Deployment Topology And Service Decomposition](adr/platform/DEPLOYMENT_TOPOLOGY_AND_DECOMPOSITION.md)
 - [ADR-108 API Strategy And GraphQL Scope](adr/platform/API_STRATEGY_AND_GRAPHQL_SCOPE.md)
 - [ADR-109 Field Permissions Mask Contract](adr/core/ADR-109-field-permissions-mask-contract.md)
+- [ADR-110 Module Catalog API Versioning](adr/platform/ADR-110-module-catalog-api-versioning.md)
 
 # Governance inspection reports are no longer retained in-repo; ADR governance is continuous via `ADR_INDEX.md` and `ADR_POLICY.md`.
 

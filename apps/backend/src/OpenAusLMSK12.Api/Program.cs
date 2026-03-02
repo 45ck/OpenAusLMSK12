@@ -1,7 +1,12 @@
+using System.Text.Json;
 using OpenAusLMSK12.Api.Modules;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
+builder.Services.ConfigureHttpJsonOptions(options =>
+{
+    options.SerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+});
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
@@ -30,26 +35,36 @@ app.MapGet("/health", () => new
     status = "ok",
     checkedAt = DateTimeOffset.UtcNow
 });
-
-app.MapGet("/api/modules", () => DomainModuleCatalog.Catalog);
-app.MapGet("/api/modules/{slug}", (string slug) => DomainModuleCatalog.GetModuleBySlug(slug));
-app.MapGet("/api/modules/{slug}/journeys", (string slug) =>
+app.MapGet("/api/v1/health", () => new
 {
-    var payload = DomainModuleCatalog.Catalog.Capabilities.FirstOrDefault(module =>
-        string.Equals(module.Slug, slug, StringComparison.OrdinalIgnoreCase));
-    return payload is null
-        ? Results.NotFound(new { message = $"Unknown module '{slug}'." })
-        : Results.Ok(payload.Journey);
+    status = "ok",
+    checkedAt = DateTimeOffset.UtcNow
 });
 
-app.MapGet("/api/engagement/ready-modules", () => DomainModuleCatalog.Catalog.Capabilities
-    .Where(capability => capability.Stage is "in_progress" or "ready" or "designed")
-    .Select(capability => new
+static void MapModuleCatalogRoutes(IEndpointRouteBuilder routeBuilder, string apiPrefix)
+{
+    routeBuilder.MapGet($"{apiPrefix}/modules", () => DomainModuleCatalog.Catalog);
+    routeBuilder.MapGet($"{apiPrefix}/modules/{slug}", (string slug) => DomainModuleCatalog.GetModuleBySlug(slug));
+    routeBuilder.MapGet($"{apiPrefix}/modules/{slug}/journeys", (string slug) =>
     {
-        capability.Id,
-        capability.Name,
-        capability.Slug,
-        capability.Stage
-    }));
+        var payload = DomainModuleCatalog.Catalog.Capabilities.FirstOrDefault(module =>
+            string.Equals(module.Slug, slug, StringComparison.OrdinalIgnoreCase));
+        return payload is null
+            ? Results.NotFound(new { message = $"Unknown module '{slug}'." })
+            : Results.Ok(payload.Journey);
+    });
+    routeBuilder.MapGet($"{apiPrefix}/engagement/ready-modules", () => DomainModuleCatalog.Catalog.Capabilities
+        .Where(capability => capability.Stage is "in_progress" or "ready" or "designed")
+        .Select(capability => new
+        {
+            capability.Id,
+            capability.Name,
+            capability.Slug,
+            capability.Stage
+        }));
+}
+
+MapModuleCatalogRoutes(app, "/api/v1");
+MapModuleCatalogRoutes(app, "/api");
 
 app.Run();

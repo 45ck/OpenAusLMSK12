@@ -1,5 +1,3 @@
-using System.Text.Json.Serialization;
-
 namespace OpenAusLMSK12.Api.Modules;
 
 public record ModuleJourney(string Id, string Title, string Summary, string[] SampleSteps);
