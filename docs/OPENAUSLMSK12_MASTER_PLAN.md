@@ -116,6 +116,12 @@ The following plan combines all domain experts and current repository design doc
 - `USER_JOURNEY_EXECUTION_GOVERNANCE.md` (merged into this plan)
 - `LOW_FIDELITY_PROTOTYPING_STANDARD.md` (merged into this plan)
 - `DIGITAL_MODELING_STANDARD.md` (merged into this plan)
+- `ADMISSIONS_ENROLMENT_EXECUTION_PACKAGE.md` (merged into this plan)
+- `ATTENDANCE_DUTY_OF_CARE_EXECUTION_PACKAGE.md` (merged into this plan)
+- `LEARNING_AND_ASSESSMENT_EXECUTION_PACKAGE.md` (merged into this plan)
+- `FINANCE_AND_SERVICES_EXECUTION_PACKAGE.md` (merged into this plan)
+- `OPERATIONS_EVENTS_EXECUTION_PACKAGE.md` (merged into this plan)
+- `WELLBEING_AND_GUARDIANSHIP_EXECUTION_PACKAGE.md` (merged into this plan)
 
 ## 2) Team-of-Experts Working Set
 1. Architecture and platform boundaries
@@ -937,6 +943,13 @@ This section is normalized into ADR governance:
 - Journey sequencing and ownership: `ADR-091 User Journey Execution Governance`
 - Prototype/package requirements: `ADR-092 Low Fidelity Prototyping Standard`
 - Diagram standards: `ADR-093 Digital Modeling Standard`
+- Domain execution packages:
+  - `ADR-094 Admissions and Enrolment Execution Package`
+  - `ADR-095 Attendance and Duty of Care Execution Package`
+  - `ADR-096 Learning and Assessment Execution Package`
+  - `ADR-097 Finance and Services Execution Package`
+  - `ADR-098 Operations and Events Execution Package`
+  - `ADR-099 Wellbeing and Guardianship Execution Package`
 
 ## Onboarding Journey
 ### 1) Tenant and School Setup

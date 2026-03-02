@@ -99,6 +99,12 @@ Top-level planning and execution artifacts are normalized with ADR headers (ADR-
 - [ADR-091 User Journey Execution Governance](adr/platform/USER_JOURNEY_EXECUTION_GOVERNANCE.md)
 - [ADR-092 Low Fidelity Prototyping Standard](adr/platform/LOW_FIDELITY_PROTOTYPING_STANDARD.md)
 - [ADR-093 Digital Modeling Standard](adr/platform/DIGITAL_MODELING_STANDARD.md)
+- [ADR-094 Admissions And Enrolment Execution Package](adr/people/ADMISSIONS_ENROLMENT_EXECUTION_PACKAGE.md)
+- [ADR-095 Attendance And Duty Of Care Execution Package](adr/attendance/ATTENDANCE_DUTY_OF_CARE_EXECUTION_PACKAGE.md)
+- [ADR-096 Learning And Assessment Execution Package](adr/learning/LEARNING_AND_ASSESSMENT_EXECUTION_PACKAGE.md)
+- [ADR-097 Finance And Services Execution Package](adr/finance/FINANCE_AND_SERVICES_EXECUTION_PACKAGE.md)
+- [ADR-098 Operations And Events Execution Package](adr/operations/OPERATIONS_EVENTS_EXECUTION_PACKAGE.md)
+- [ADR-099 Wellbeing And Guardianship Execution Package](adr/trust/WELLBEING_AND_GUARDIANSHIP_EXECUTION_PACKAGE.md)
 
 # Governance inspection reports are no longer retained in-repo; ADR governance is continuous via `ADR_INDEX.md` and `ADR_POLICY.md`.
 
