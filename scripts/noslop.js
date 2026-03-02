@@ -9,26 +9,36 @@ const local = [join(process.cwd(), 'node_modules', '.bin', 'noslop'), join(proce
 const localNoslop = local.find((file) => existsSync(file));
 
 const npmPackage = '@45ck/noslop';
-const npmCommand = ['--yes', npmPackage, ...args];
+const npmFallbackCommand = process.env.npm_execpath
+  ? [process.execPath, process.env.npm_execpath, 'exec', '--yes', '--', npmPackage, ...args]
+  : [
+      process.platform === 'win32' ? 'npm.cmd' : 'npm',
+      'exec',
+      '--yes',
+      '--',
+      npmPackage,
+      ...args,
+    ];
 
-const command = localNoslop ?? 'npx';
-const commandArgs = localNoslop ? args : npmCommand;
+const command = localNoslop ?? npmFallbackCommand[0];
+const commandArgs = localNoslop ? args : npmFallbackCommand.slice(1);
+const usingNpmFallback = !localNoslop;
 
 const run = (cmd, cmdArgs) => {
   return spawnSync(cmd, cmdArgs, {
     stdio: ['ignore', 'pipe', 'pipe'],
-    shell: process.platform === 'win32',
+    shell: false,
     encoding: 'utf8',
   });
 };
 
 const formatOutput = (result) => `[stdout]\n${result.stdout ?? ''}\n[stderr]\n${result.stderr ?? ''}`;
 
-if (command === 'npx') {
+if (usingNpmFallback) {
   const result = run(command, commandArgs);
 
   if (result.error) {
-    console.error('Failed to execute noslop via npx:', result.error.message);
+    console.error('Failed to execute noslop via npm:', result.error.message);
     process.exit(1);
   }
 
@@ -43,7 +53,8 @@ if (command === 'npx') {
     output.includes('could not determine executable') ||
     output.includes('does not exist under owner') ||
     output.includes('command \"noslop\" not found') ||
-    output.includes('unknown command');
+    output.includes('unknown command') ||
+    output.includes('is not recognized as an internal or external command');
 
   if (!looksMissing) {
     process.stdout.write(result.stdout ?? '');
@@ -67,3 +78,4 @@ if (result.error) {
 process.stdout.write(result.stdout ?? '');
 process.stderr.write(result.stderr ?? '');
 process.exit(result.status ?? 0);
+
