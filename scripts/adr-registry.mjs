@@ -463,6 +463,8 @@ function validateRecords(records, strictMode) {
     }
   }
 
+  const indexedRecords = new Map(records.map((record) => [record.id, record]));
+
   for (const record of records) {
     for (const ref of [...record.dependsOn, ...record.supersedes, ...record.supersededBy]) {
       if (!byId.has(ref)) {
@@ -471,10 +473,21 @@ function validateRecords(records, strictMode) {
     }
 
     for (const conflictId of record.conflictsWith) {
+      if (conflictId === record.id) {
+        errors.push(`${record.id}: conflicts-with cannot reference itself`);
+      }
       if (!byId.has(conflictId)) {
         errors.push(`${record.id}: references missing ADR "${conflictId}" in conflicts-with`);
         continue;
       }
+
+      const counterpart = indexedRecords.get(conflictId);
+      if (counterpart && !counterpart.conflictsWith.includes(record.id)) {
+        errors.push(
+          `${record.id}: conflicts-with is not mirrored by ${conflictId} (missing ${record.id} in that ADR's conflicts-with list)`,
+        );
+      }
+
       const contradiction = findContradictionForPair(contradictionEntries.entries, record.id, conflictId);
       if (!contradiction && !isDraft(record.status)) {
         errors.push(
