@@ -86,14 +86,19 @@ All business modules read/write from the same authoritative model while owning t
 - Use `ERD_AND_DATA_MODEL.md` first for domain contracts.
 - Use `ADR-091 User Journey Execution Governance` and `ADR-085 Web Journey Map And Navigation Matrix` for persona behavior and UX priorities.
 - Use `IMPLEMENTATION_ROADMAP.md` for sequencing and acceptance.
+- Use `ADR-112` through `ADR-117` for pre-build readiness, migration, ticketing, journey, and release gating requirements.
 
 ## Immediate First Tasks for this Project
 1. Approve domain model and governance matrix.
 2. Lock RBAC and consent model.
 3. Define tenant and relationship boundaries.
-4. Implement identity + people + enrolment core.
-5. Define API contracts for student, timetable, attendance, class, assignment, grade.
-6. Run the first controlled tenant cohort (one internal test school, then one external school), with all required compliance and audit gates enabled.
+4. Pass **ADR-112** readiness gate (research traceability + readiness lock).
+5. Pass **ADR-113** migration/import control review and seed strategy.
+6. Pass **ADR-114** ticketing standard for first wave stories.
+7. Implement identity + people + enrolment core.
+8. Pass **ADR-115** journey/exception lock for startup flows.
+9. Define API contracts for student, timetable, attendance, class, assignment, grade.
+10. Run the first controlled tenant cohort (one internal test school, then one external school), with all required compliance and audit gates enabled.
 
 - `TECH_STACK_DECISION.md` (merged into this plan below)
 

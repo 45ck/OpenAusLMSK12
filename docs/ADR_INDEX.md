@@ -117,6 +117,12 @@ Top-level planning and execution artifacts are normalized with ADR headers (ADR-
 - [ADR-109 Field Permissions Mask Contract](adr/core/ADR-109-field-permissions-mask-contract.md)
 - [ADR-110 Module Catalog API Versioning](adr/platform/ADR-110-module-catalog-api-versioning.md)
 - [ADR-111 Backend Module Catalog Contract Testing](adr/platform/ADR-111-backend-module-catalog-contract-testing.md)
+- [ADR-112 Research And Implementation Readiness Gate](adr/platform/ADR-112-research-and-implementation-readiness-gate.md)
+- [ADR-113 Data Migration And Import Control](adr/platform/ADR-113-data-migration-and-import-control.md)
+- [ADR-114 Backlog And Ticket Execution Standard](adr/platform/ADR-114-backlog-and-ticket-execution-standard.md)
+- [ADR-115 Persona Journey And Exception Lock](adr/platform/ADR-115-persona-journey-and-exception-lock.md)
+- [ADR-116 Release Handover And Wave Gates](adr/platform/ADR-116-release-handover-and-wave-gates.md)
+- [ADR-117 Research To Design Traceability](adr/platform/ADR-117-research-to-design-traceability.md)
 
 # Governance inspection reports are no longer retained in-repo; ADR governance is continuous via `ADR_INDEX.md` and `ADR_POLICY.md`.
 
