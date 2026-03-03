@@ -14,6 +14,9 @@ const REGISTRY_PATH = join(ROOT, 'docs', 'adr', 'ADR_REGISTRY.json');
 const CONTRADICTION_PATH = join(ROOT, 'docs', 'adr', 'ADR_CONTRADICTION_MATRIX.json');
 const COMMAND = process.argv[2] ?? 'validate';
 const STRICT = process.argv.includes('--strict');
+const ALLOWED_STATUSES = new Set(['accepted', 'draft', 'proposed', 'superseded', 'rejected', 'deprecated', 'deferred', 'open']);
+const ALLOWED_CONTRADICTION_STATUSES = new Set(['open', 'mitigated', 'resolved']);
+const ALLOWED_CONTRADICTION_SEVERITIES = new Set(['low', 'medium', 'high', 'critical']);
 
 if (!['validate', 'emit', 'normalize'].includes(COMMAND)) {
   console.error('Usage: node scripts/adr-registry.mjs [validate|emit|normalize] [--strict]');
@@ -439,7 +442,6 @@ function validateRecords(records, strictMode) {
   const warnings = [];
   const errors = [];
   const byId = new Map();
-  const allowedStatuses = new Set(['accepted', 'draft', 'proposed', 'superseded', 'rejected', 'deprecated', 'deferred', 'open']);
   const contradictionEntries = readContradictionPayload();
 
   for (const record of records) {
@@ -456,7 +458,7 @@ function validateRecords(records, strictMode) {
     if (!record.title || record.title.length < 3) {
       warnings.push(`${record.id}: title is missing or too short`);
     }
-    if (!allowedStatuses.has(record.status)) {
+    if (!ALLOWED_STATUSES.has(record.status)) {
       warnings.push(`${record.id}: unknown status "${record.status}"`);
     }
   }
@@ -479,6 +481,9 @@ function validateRecords(records, strictMode) {
           `${record.id}: non-draft conflict with ${conflictId} has no matching ADR_CONTRADICTION_MATRIX entry`,
         );
       }
+      if (contradiction && !isDraft(record.status) && !isResolvedContradiction(contradiction)) {
+        errors.push(`${record.id}: non-draft conflict with ${conflictId} remains unresolved in ${contradiction.id}`);
+      }
     }
   }
 
@@ -494,10 +499,23 @@ function validateRecords(records, strictMode) {
       if (!entry.relatedAdrs || !Array.isArray(entry.relatedAdrs) || entry.relatedAdrs.length < 2) {
         errors.push(`contradiction ${entry.id} requires at least two ADR references`);
       }
+      if (entry.relatedAdrs) {
+        for (const related of entry.relatedAdrs) {
+          if (typeof related !== 'string' || !/^ADR-\d{3,}$/.test(related)) {
+            errors.push(`contradiction ${entry.id} has invalid ADR reference ${JSON.stringify(related)}`);
+          }
+        }
+      }
       for (const related of entry.relatedAdrs || []) {
         if (typeof related === 'string' && !byId.has(related)) {
           errors.push(`contradiction ${entry.id} references unknown ADR ${related}`);
         }
+      }
+      if (entry.severity && !ALLOWED_CONTRADICTION_SEVERITIES.has(entry.severity.toLowerCase())) {
+        errors.push(`contradiction ${entry.id} has invalid severity "${entry.severity}"`);
+      }
+      if (entry.status && !ALLOWED_CONTRADICTION_STATUSES.has(entry.status.toLowerCase())) {
+        errors.push(`contradiction ${entry.id} has invalid status "${entry.status}"`);
       }
     }
   }
@@ -524,6 +542,10 @@ function findContradictionForPair(entries, first, second) {
 
 function isDraft(status) {
   return String(status || '').toLowerCase() === 'draft';
+}
+
+function isResolvedContradiction(contradiction) {
+  return String(contradiction?.status || '').toLowerCase() === 'resolved';
 }
 
 function writeIfChanged(path, content) {
