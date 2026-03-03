@@ -6,6 +6,7 @@ Use it to create issue tickets only after:
 - ADR-112 (RG-0) is explicitly PASSed.
 - Wave-1 ADR dependencies are accepted.
 - Gate packets and evidence artifacts are prepared.
+- For each ticket, ADR-119 (journey/prototype gating) and ADR-118 (contradiction closure) are satisfied for the target flow.
 
 ## Ticket Standard (from ADR-114)
 

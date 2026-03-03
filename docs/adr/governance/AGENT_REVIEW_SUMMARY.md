@@ -55,7 +55,8 @@ Consolidate expert-domain review outcomes into an actioned design closure docume
 
 ## Next Required Loop Actions
 - Ensure every critical route has explicit permission/consent matrix entries.
-- Link contradiction log entries to ADR IDs and required gate acceptance in release checklist.
+- Contradiction tracking is now governed by [ADR-118 Planning Contradiction and Resolution Register](../platform/ADR-118-planning-contradiction-and-resolution-register.md).
+- Frontend and user-journey execution flows must pass [ADR-119 Frontend Journey and Prototype Gating](../platform/ADR-119-frontend-journey-and-prototype-gating.md) before story execution.
 
 
 

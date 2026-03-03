@@ -87,6 +87,7 @@ All business modules read/write from the same authoritative model while owning t
 - Use `ADR-091 User Journey Execution Governance` and `ADR-085 Web Journey Map And Navigation Matrix` for persona behavior and UX priorities.
 - Use `IMPLEMENTATION_ROADMAP.md` for sequencing and acceptance.
 - Use `ADR-112` through `ADR-117` for pre-build readiness, migration, ticketing, journey, and release gating requirements.
+- Use `ADR-118` for contradiction resolution protocol and `ADR-119` for pre-implementation journey/prototype gating.
 
 ## Immediate First Tasks for this Project
 1. Approve domain model and governance matrix.
