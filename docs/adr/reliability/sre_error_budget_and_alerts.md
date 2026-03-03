@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-079"
+title: "Sre Error Budget And Alerts"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[sre_error_budget_and_alerts.md](sre_error_budget_and_alerts.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "reliability"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-079: Sre Error Budget And Alerts
 
 ## Metadata

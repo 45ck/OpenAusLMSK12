@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-110"
+title: "Module Catalog API Versioning"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "domain catalog API contract"
+source-artifact: "[ADR-108](API_STRATEGY_AND_GRAPHQL_SCOPE.md)"
+status-gate: "API-first + compatibility review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-110: Module Catalog API Versioning
 
 ## Metadata

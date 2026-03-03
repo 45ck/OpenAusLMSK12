@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-089"
+title: "Workforce Lifecycle Spec"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[workforce_lifecycle_spec.md](workforce_lifecycle_spec.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "workforce"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-089: Workforce Lifecycle Spec
 
 ## Metadata

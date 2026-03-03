@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-041"
+title: "Event Risk And Consent Model"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[event_risk_and_consent_model.md](event_risk_and_consent_model.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "operations"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-041: Event Risk And Consent Model
 
 ## Metadata

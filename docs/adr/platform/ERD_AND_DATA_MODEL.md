@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-039"
+title: "Erd And Data Model"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[ERD_AND_DATA_MODEL.md](ERD_AND_DATA_MODEL.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-039: Erd And Data Model
 
 ## Metadata

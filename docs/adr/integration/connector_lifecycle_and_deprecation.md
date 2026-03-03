@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-029"
+title: "Connector Lifecycle And Deprecation"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[connector_lifecycle_and_deprecation.md](connector_lifecycle_and_deprecation.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "integration"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-029: Connector Lifecycle And Deprecation
 
 ## Metadata

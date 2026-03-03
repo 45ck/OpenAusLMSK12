@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openauslmsk12.org/docs/adr/ADR_REGISTRY.schema.json",
+  "title": "OpenAusLMSK12 ADR Registry",
+  "type": "object",
+  "required": ["generatedAt", "version", "totalRecords", "records"],
+  "properties": {
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "totalRecords": {
+      "type": "number",
+      "minimum": 0
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/adrRecord"
+      }
+    },
+    "contradictions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/contradictionRecord"
+      }
+    }
+  },
+  "$defs": {
+    "adrRecord": {
+      "type": "object",
+      "required": ["id", "title", "status", "path", "domain"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^ADR-\\d{3,}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 3
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "decisionDate": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "string"
+        },
+        "domain": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string",
+          "pattern": "^docs/adr/[^/]+/.+\\.md$"
+        },
+        "sourceArtifact": {
+          "type": "string"
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ADR-\\d{3,}$"
+          }
+        },
+        "supersedes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ADR-\\d{3,}$"
+          }
+        },
+        "supersededBy": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ADR-\\d{3,}$"
+          }
+        },
+        "conflictsWith": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ADR-\\d{3,}$"
+          }
+        },
+        "statusGate": {
+          "type": "string"
+        }
+      }
+    },
+    "contradictionRecord": {
+      "type": "object",
+      "required": ["id", "severity", "status", "summary", "relatedAdrs"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^CONTR-\\d{3,}$"
+        },
+        "severity": {
+          "type": "string",
+          "enum": ["low", "medium", "high", "critical"]
+        },
+        "status": {
+          "type": "string",
+          "enum": ["open", "mitigated", "resolved"]
+        },
+        "summary": {
+          "type": "string"
+        },
+        "relatedAdrs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ADR-\\d{3,}$"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-011"
+title: "Admissions Lifecycle Erd"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[admissions_lifecycle_erd.md](admissions_lifecycle_erd.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "people"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-011: Admissions Lifecycle Erd
 
 ## Metadata

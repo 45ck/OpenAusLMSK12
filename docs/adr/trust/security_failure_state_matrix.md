@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-078"
+title: "Security Failure State Matrix"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[security_failure_state_matrix.md](security_failure_state_matrix.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "trust"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-078: Security Failure State Matrix
 
 ## Metadata

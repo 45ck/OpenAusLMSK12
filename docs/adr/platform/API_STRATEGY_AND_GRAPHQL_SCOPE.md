@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-108"
+title: "API Strategy and GraphQL Scope"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "external and internal API contract model"
+source-artifact: "[TECH_STACK_DECISION](TECH_STACK_DECISION.md)"
+status-gate: "ADR review + API contract registry"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-108: API Strategy and GraphQL Scope
 
 ## Metadata

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-066"
+title: "Payment Gateway Reconciliation Matrix"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[payment_gateway_reconciliation_matrix.md](payment_gateway_reconciliation_matrix.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "finance"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-066: Payment Gateway Reconciliation Matrix
 
 ## Metadata

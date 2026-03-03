@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-093"
+title: "UML and Behavioral Modeling Standard"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "software engineering design and documentation"
+source-artifact: "[COMPREHENSIVE_PLAN_RESEARCH_DISCOVERY.md](../../COMPREHENSIVE_PLAN_RESEARCH_DISCOVERY.md), [ERD_AND_DATA_MODEL.md](ERD_AND_DATA_MODEL.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-093: UML and Behavioral Modeling Standard
 
 ## Metadata

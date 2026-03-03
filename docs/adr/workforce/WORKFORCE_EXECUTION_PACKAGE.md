@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-102"
+title: "Workforce Execution Package"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "staff lifecycle, roster/leave conflicts, timecard baseline, and workforce self-service"
+source-artifact: "[leave_roster_conflict_rules.md](../workforce/leave_roster_conflict_rules.md), [workforce_lifecycle_spec.md](../workforce/workforce_lifecycle_spec.md), [payroll_integration_boundary.md](../finance/payroll_integration_boundary.md), [ADMISSIONS_ENROLMENT_EXECUTION_PACKAGE.md](../people/ADMISSIONS_ENROLMENT_EXECUTION_PACKAGE.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "workforce"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-102: Workforce Execution Package
 
 ## Metadata

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-033"
+title: "Custody Conflict Rules"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[custody_conflict_rules.md](custody_conflict_rules.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "trust"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-033: Custody Conflict Rules
 
 ## Metadata

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-116"
+title: "Release Handover and Wave Gate Protocol"
+status: "accepted"
+decision-date: "2026-03-03"
+scope: "staging flow, release confidence, and milestone handover"
+source-artifact: "[IMPLEMENTATION_ROADMAP.md](IMPLEMENTATION_ROADMAP.md), [IMPLEMENTATION_BACKLOG_AND_WORKSTREAMS.md](IMPLEMENTATION_BACKLOG_AND_WORKSTREAMS.md), [QUALITY_AND_TEST_STRATEGY_MATRIX.md](QUALITY_AND_TEST_STRATEGY_MATRIX.md), [observability_and_release_readiness_runbook.md](../reliability/observability_and_release_readiness_runbook.md)"
+status-gate: "planning + reliability + governance sign-off"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-116: Release Handover and Wave Gate Protocol
 
 ## Metadata

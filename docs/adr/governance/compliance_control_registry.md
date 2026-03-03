@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-026"
+title: "Compliance Control Registry"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[compliance_control_registry.md](compliance_control_registry.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "governance"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-026: Compliance Control Registry
 
 ## Metadata

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-046"
+title: "Form Schema Reference"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[form_schema_reference.md](form_schema_reference.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "learning"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-046: Form Schema Reference
 
 ## Metadata

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-107"
+title: "Deployment Topology and Service Decomposition"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "runtime architecture and delivery topology"
+source-artifact: "[IMPLEMENTATION_BACKLOG_AND_WORKSTREAMS](IMPLEMENTATION_BACKLOG_AND_WORKSTREAMS.md)"
+status-gate: "ADR review + implementation package approval"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-107: Deployment Topology and Service Decomposition
 
 ## Metadata

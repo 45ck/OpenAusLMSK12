@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-038"
+title: "Enrolment Lifecycle State Machine"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[enrolment_lifecycle_state_machine.md](enrolment_lifecycle_state_machine.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "people"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-038: Enrolment Lifecycle State Machine
 
 ## Metadata

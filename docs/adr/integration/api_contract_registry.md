@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-017"
+title: "Api Contract Registry"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[api_contract_registry.md](api_contract_registry.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "integration"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-017: Api Contract Registry
 
 ## Metadata

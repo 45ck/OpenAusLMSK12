@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-014"
+title: "Ai Moderation Telemetry Plan"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[ai_moderation_telemetry_plan.md](ai_moderation_telemetry_plan.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "trust"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-014: Ai Moderation Telemetry Plan
 
 ## Metadata

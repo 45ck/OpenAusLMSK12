@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-036"
+title: "Domain Permissions Matrix"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[domain_permissions_matrix.md](domain_permissions_matrix.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "cross-cutting"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-036: Domain Permissions Matrix
 
 ## Metadata

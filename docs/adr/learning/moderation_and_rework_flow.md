@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-060"
+title: "Moderation And Rework Flow"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[moderation_and_rework_flow.md](moderation_and_rework_flow.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "learning"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-060: Moderation And Rework Flow
 
 ## Metadata

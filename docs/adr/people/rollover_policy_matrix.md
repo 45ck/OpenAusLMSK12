@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-075"
+title: "Rollover Policy Matrix"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[rollover_policy_matrix.md](rollover_policy_matrix.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "people"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-075: Rollover Policy Matrix
 
 ## Metadata

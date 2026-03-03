@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-086"
+title: "Webhook Reliability Contracts"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[webhook_reliability_contracts.md](webhook_reliability_contracts.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "integration"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-086: Webhook Reliability Contracts
 
 ## Metadata

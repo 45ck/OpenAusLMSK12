@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-094"
+title: "Admissions and Enrolment Execution Package"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "core operations + trust + people domain"
+source-artifact: "[USER_JOURNEY_EXECUTION_GOVERNANCE.md](../platform/USER_JOURNEY_EXECUTION_GOVERNANCE.md), [LOW_FIDELITY_PROTOTYPING_STANDARD.md](../platform/LOW_FIDELITY_PROTOTYPING_STANDARD.md), [ADMISSIONS_LIFECYCLE_erd.md](admissions_lifecycle_erd.md), [enrolment_lifecycle_state_machine.md](enrolment_lifecycle_state_machine.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "people"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-094: Admissions and Enrolment Execution Package
 
 ## Metadata

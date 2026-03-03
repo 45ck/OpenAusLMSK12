@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-092"
+title: "Low-Fidelity Prototyping Standard"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "frontend design and interaction planning"
+source-artifact: "[FULL_SOFTWARE_ENGINEERING_PLAN.md](FULL_SOFTWARE_ENGINEERING_PLAN.md), [TECH_STACK_DECISION.md](TECH_STACK_DECISION.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-092: Low-Fidelity Prototyping Standard
 
 ## Metadata

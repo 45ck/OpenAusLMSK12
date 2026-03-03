@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-071"
+title: "Reporting Release Matrix"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[reporting_release_matrix.md](reporting_release_matrix.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "learning"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-071: Reporting Release Matrix
 
 ## Metadata

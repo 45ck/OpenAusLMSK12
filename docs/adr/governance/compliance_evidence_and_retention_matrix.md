@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-027"
+title: "Compliance Evidence And Retention Matrix"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[compliance_evidence_and_retention_matrix.md](compliance_evidence_and_retention_matrix.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "governance"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-027: Compliance Evidence And Retention Matrix
 
 ## Metadata

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-068"
+title: "Personas And Route Matrix"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[personas_and_route_matrix.md](personas_and_route_matrix.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "communications"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-068: Personas And Route Matrix
 
 ## Metadata

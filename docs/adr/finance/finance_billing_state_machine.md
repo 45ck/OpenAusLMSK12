@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-044"
+title: "Finance Billing State Machine"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[finance_billing_state_machine.md](finance_billing_state_machine.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "finance"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-044: Finance Billing State Machine
 
 ## Metadata

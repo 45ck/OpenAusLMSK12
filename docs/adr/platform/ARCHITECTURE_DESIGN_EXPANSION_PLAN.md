@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-020"
+title: "Architecture Design Expansion Plan"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[ARCHITECTURE_DESIGN_EXPANSION_PLAN.md](ARCHITECTURE_DESIGN_EXPANSION_PLAN.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-020: Architecture Design Expansion Plan
 
 ## Metadata

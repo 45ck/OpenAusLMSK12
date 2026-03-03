@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-080"
+title: "Staffing And Availability Graph"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[staffing_and_availability_graph.md](staffing_and_availability_graph.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "attendance"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-080: Staffing And Availability Graph
 
 ## Metadata

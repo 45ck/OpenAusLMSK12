@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-028"
+title: "Comprehensive Implementation Artifact"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[COMPREHENSIVE_IMPLEMENTATION_ARTIFACT.md](COMPREHENSIVE_IMPLEMENTATION_ARTIFACT.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-028: Comprehensive Implementation Artifact
 
 ## Metadata

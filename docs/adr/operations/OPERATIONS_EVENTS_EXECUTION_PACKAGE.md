@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-098"
+title: "Operations and Events Execution Package"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "substitutions, scheduling operations, excursions, visitor operations"
+source-artifact: "[USER_JOURNEY_EXECUTION_GOVERNANCE.md](../platform/USER_JOURNEY_EXECUTION_GOVERNANCE.md), [route_structure_and_component_contracts.md](../platform/route_structure_and_component_contracts.md), [event_risk_and_consent_model.md](event_risk_and_consent_model.md), [constraint_resolution_policy.md](constraint_resolution_policy.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "operations"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-098: Operations and Events Execution Package
 
 ## Metadata

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-059"
+title: "Message Audit And Retention"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[message_audit_and_retention.md](message_audit_and_retention.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "communications"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-059: Message Audit And Retention
 
 ## Metadata

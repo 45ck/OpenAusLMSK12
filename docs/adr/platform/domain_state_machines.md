@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-037"
+title: "Domain State Machines"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[domain_state_machines.md](domain_state_machines.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-037: Domain State Machines
 
 ## Metadata

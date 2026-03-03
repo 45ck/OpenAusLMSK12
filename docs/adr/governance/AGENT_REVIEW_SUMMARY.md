@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-012"
+title: "Agent Review Summary"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[AGENT_REVIEW_SUMMARY.md](AGENT_REVIEW_SUMMARY.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "governance"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-012: Agent Review Summary
 
 ## Metadata

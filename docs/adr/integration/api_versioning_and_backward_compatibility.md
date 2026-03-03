@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-018"
+title: "Api Versioning And Backward Compatibility"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[api_versioning_and_backward_compatibility.md](api_versioning_and_backward_compatibility.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "integration"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-018: Api Versioning And Backward Compatibility
 
 ## Metadata

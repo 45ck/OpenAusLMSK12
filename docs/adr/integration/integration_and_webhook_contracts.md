@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-054"
+title: "Integration And Webhook Contracts"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[integration_and_webhook_contracts.md](integration_and_webhook_contracts.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "integration"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-054: Integration And Webhook Contracts
 
 ## Metadata

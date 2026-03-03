@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-034"
+title: "Db Implementation Checklist"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[DB_IMPLEMENTATION_CHECKLIST.md](DB_IMPLEMENTATION_CHECKLIST.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-034: Db Implementation Checklist
 
 ## Metadata

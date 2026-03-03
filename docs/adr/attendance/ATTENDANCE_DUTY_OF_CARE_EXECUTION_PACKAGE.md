@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-095"
+title: "Attendance and Duty of Care Execution Package"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "attendance + visitor management + welfare-triggered continuity"
+source-artifact: "[USER_JOURNEY_EXECUTION_GOVERNANCE.md](../platform/USER_JOURNEY_EXECUTION_GOVERNANCE.md), [attendance_exception_catalogue.md](attendance_exception_catalogue.md), [kiosk_and_integrity_model.md](kiosk_and_integrity_model.md), [visitor_emergency_state_model.md](visitor_emergency_state_model.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "attendance"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-095: Attendance and Duty of Care Execution Package
 
 ## Metadata

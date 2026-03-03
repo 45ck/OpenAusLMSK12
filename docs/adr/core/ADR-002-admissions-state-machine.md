@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-002"
+title: "Admissions State Machine"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "platform"
+source-artifact: "ADR 002 admissions state machine"
+status-gate: "adr governance"
+domain: "core"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-002 Admissions State Machine
 
 ## Status: Accepted

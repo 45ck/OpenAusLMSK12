@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-103"
+title: "Integration Fabric Execution Package"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "integration clients, app registry, outbound webhooks, imports/exports, and contract governance"
+source-artifact: "[api_contract_registry.md](../integration/api_contract_registry.md), [api_and_webhook_contract_register.md](api_and_webhook_contract_register.md), [api_versioning_and_backward_compatibility.md](api_versioning_and_backward_compatibility.md), [webhook_reliability_contracts.md](webhook_reliability_contracts.md), [integration_and_webhook_contracts.md](integration_and_webhook_contracts.md), [COMPREHENSIVE_IMPLEMENTATION_ARTIFACT.md](../platform/COMPREHENSIVE_IMPLEMENTATION_ARTIFACT.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "integration"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-103: Integration Fabric Execution Package
 
 ## Metadata

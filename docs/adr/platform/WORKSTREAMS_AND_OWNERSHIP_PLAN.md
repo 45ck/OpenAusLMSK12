@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-090"
+title: "Workstreams And Ownership Plan"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[WORKSTREAMS_AND_OWNERSHIP_PLAN.md](WORKSTREAMS_AND_OWNERSHIP_PLAN.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-090: Workstreams And Ownership Plan
 
 ## Metadata

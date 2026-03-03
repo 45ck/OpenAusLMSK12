@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-114"
+title: "Backlog and Ticket Execution Standard"
+status: "accepted"
+decision-date: "2026-03-03"
+scope: "delivery discipline and implementation ticketing"
+source-artifact: "[IMPLEMENTATION_BACKLOG_AND_WORKSTREAMS.md](IMPLEMENTATION_BACKLOG_AND_WORKSTREAMS.md), [WORKSTREAMS_AND_OWNERSHIP_PLAN.md](WORKSTREAMS_AND_OWNERSHIP_PLAN.md), [FULL_SOFTWARE_ENGINEERING_PLAN.md](FULL_SOFTWARE_ENGINEERING_PLAN.md), [QUALITY_AND_TEST_STRATEGY_MATRIX.md](QUALITY_AND_TEST_STRATEGY_MATRIX.md)"
+status-gate: "planning readiness review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-114: Backlog and Ticket Execution Standard
 
 ## Metadata

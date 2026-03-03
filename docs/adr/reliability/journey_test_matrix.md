@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-055"
+title: "Journey Test Matrix"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[journey_test_matrix.md](journey_test_matrix.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "reliability"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-055: Journey Test Matrix
 
 ## Metadata

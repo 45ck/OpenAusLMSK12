@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-007"
+title: "Route Contract Completion"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "platform"
+source-artifact: "ADR 007 route contract completion"
+status-gate: "adr governance"
+domain: "core"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-007 Route Contract Completion
 
 ## Status: Accepted

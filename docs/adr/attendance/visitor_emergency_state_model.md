@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-083"
+title: "Visitor Emergency State Model"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[visitor_emergency_state_model.md](visitor_emergency_state_model.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "attendance"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-083: Visitor Emergency State Model
 
 ## Metadata

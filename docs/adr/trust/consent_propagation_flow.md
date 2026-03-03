@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-031"
+title: "Consent Propagation Flow"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[consent_propagation_flow.md](consent_propagation_flow.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "trust"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-031: Consent Propagation Flow
 
 ## Metadata

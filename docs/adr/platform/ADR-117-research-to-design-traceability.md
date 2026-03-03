@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-117"
+title: "Research-to-Design Traceability"
+status: "accepted"
+decision-date: "2026-03-03"
+scope: "research consolidation and design decision lineage"
+source-artifact: "[COMPREHENSIVE_PLAN_RESEARCH_DISCOVERY.md](../../COMPREHENSIVE_PLAN_RESEARCH_DISCOVERY.md), [OPENAUSLMSK12_MASTER_PLAN.md](../../OPENAUSLMSK12_MASTER_PLAN.md), [QUALITY_AND_TEST_STRATEGY_MATRIX.md](QUALITY_AND_TEST_STRATEGY_MATRIX.md)"
+status-gate: "governance review + ADR completeness check"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-117: Research-to-Design Traceability
 
 ## Metadata

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-081"
+title: "Tech Stack Decision"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[TECH_STACK_DECISION.md](TECH_STACK_DECISION.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-081: Tech Stack Decision
 
 ## Metadata

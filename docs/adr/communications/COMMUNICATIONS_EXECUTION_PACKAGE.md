@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-100"
+title: "Communications Execution Package"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "notices, secure messaging, notification delivery, and communication auditability"
+source-artifact: "[USER_JOURNEY_EXECUTION_GOVERNANCE.md](../platform/USER_JOURNEY_EXECUTION_GOVERNANCE.md), [web_journey_map_and_navigation_matrix.md](web_journey_map_and_navigation_matrix.md), [communication_privacy_routing.md](communication_privacy_routing.md), [message_audit_and_retention.md](message_audit_and_retention.md), [notification_timing_and_retry.md](notification_timing_and_retry.md), [personas_and_route_matrix.md](personas_and_route_matrix.md), [OPENAUSLMSK12_MASTER_PLAN.md](../../OPENAUSLMSK12_MASTER_PLAN.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "communications"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-100: Communications Execution Package
 
 ## Metadata

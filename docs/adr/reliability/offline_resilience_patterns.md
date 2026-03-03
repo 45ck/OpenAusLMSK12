@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-063"
+title: "Offline Resilience Patterns"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[offline_resilience_patterns.md](offline_resilience_patterns.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "reliability"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-063: Offline Resilience Patterns
 
 ## Metadata

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-087"
+title: "Wellbeing Privacy And Redaction Model"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[wellbeing_privacy_and_redaction_model.md](wellbeing_privacy_and_redaction_model.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "trust"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-087: Wellbeing Privacy And Redaction Model
 
 ## Metadata

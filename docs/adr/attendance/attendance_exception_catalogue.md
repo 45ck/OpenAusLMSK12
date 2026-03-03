@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-023"
+title: "Attendance Exception Catalogue"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[attendance_exception_catalogue.md](attendance_exception_catalogue.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "attendance"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-023: Attendance Exception Catalogue
 
 ## Metadata

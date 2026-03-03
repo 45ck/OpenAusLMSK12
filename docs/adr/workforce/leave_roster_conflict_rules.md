@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-058"
+title: "Leave Roster Conflict Rules"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[leave_roster_conflict_rules.md](leave_roster_conflict_rules.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "workforce"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-058: Leave Roster Conflict Rules
 
 ## Metadata

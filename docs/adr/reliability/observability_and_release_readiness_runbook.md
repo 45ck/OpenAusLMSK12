@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-062"
+title: "Observability And Release Readiness Runbook"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[observability_and_release_readiness_runbook.md](observability_and_release_readiness_runbook.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "reliability"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-062: Observability And Release Readiness Runbook
 
 ## Metadata

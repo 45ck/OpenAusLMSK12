@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-067"
+title: "Payroll Integration Boundary"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[payroll_integration_boundary.md](payroll_integration_boundary.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "finance"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-067: Payroll Integration Boundary
 
 ## Metadata

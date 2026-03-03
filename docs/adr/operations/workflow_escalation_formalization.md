@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-088"
+title: "Workflow Escalation Formalization"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[workflow_escalation_formalization.md](workflow_escalation_formalization.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "operations"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-088: Workflow Escalation Formalization
 
 ## Metadata

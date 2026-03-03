@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-005"
+title: "Tenant Isolation Enforcement"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "platform"
+source-artifact: "ADR 005 tenant isolation"
+status-gate: "adr governance"
+domain: "core"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-005 Tenant Isolation Enforcement
 
 ## Status: Accepted

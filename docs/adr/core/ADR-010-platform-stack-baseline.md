@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-010"
+title: "Platform Stack Baseline"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "platform"
+source-artifact: "ADR 010 platform stack baseline"
+status-gate: "adr governance"
+domain: "core"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-010 Platform Stack Baseline
 
 ## Status: Accepted

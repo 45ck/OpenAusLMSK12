@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-035"
+title: "Deep Research Agent Kit"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[deep_research_agent_kit.md](deep_research_agent_kit.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "cross-cutting"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-035: Deep Research Agent Kit
 
 ## Metadata

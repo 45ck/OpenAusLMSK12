@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-008"
+title: "Documentation Artifact Materialization"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "platform"
+source-artifact: "ADR 008 artifact materialization"
+status-gate: "adr governance"
+domain: "core"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-008 Documentation Artifact Materialization
 
 ## Status: Accepted

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-057"
+title: "Learning Domain Content Contracts"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[learning_domain_content_contracts.md](learning_domain_content_contracts.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "learning"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-057: Learning Domain Content Contracts
 
 ## Metadata

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-112"
+title: "Research and Implementation Readiness Gate"
+status: "accepted"
+decision-date: "2026-03-03"
+scope: "planning, gating, and evidence policy"
+source-artifact: "[COMPREHENSIVE_PLAN_RESEARCH_DISCOVERY.md](../../COMPREHENSIVE_PLAN_RESEARCH_DISCOVERY.md), [OPENAUSLMSK12_MASTER_PLAN.md](../../OPENAUSLMSK12_MASTER_PLAN.md)"
+status-gate: "ADR governance + implementation planning approval"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-112: Research and Implementation Readiness Gate
 
 ## Metadata

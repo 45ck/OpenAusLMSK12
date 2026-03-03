@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-030"
+title: "Consent And Household Access Matrix"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[consent_and_household_access_matrix.md](consent_and_household_access_matrix.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "trust"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-030: Consent And Household Access Matrix
 
 ## Metadata

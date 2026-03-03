@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-045"
+title: "Fiscal Retention And Export Model"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[fiscal_retention_and_export_model.md](fiscal_retention_and_export_model.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "finance"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-045: Fiscal Retention And Export Model
 
 ## Metadata

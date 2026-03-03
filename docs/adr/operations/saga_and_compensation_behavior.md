@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-077"
+title: "Saga And Compensation Behavior"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[saga_and_compensation_behavior.md](saga_and_compensation_behavior.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "operations"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-077: Saga And Compensation Behavior
 
 ## Metadata

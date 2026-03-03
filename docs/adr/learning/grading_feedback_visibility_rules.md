@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-048"
+title: "Grading Feedback Visibility Rules"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[grading_feedback_visibility_rules.md](grading_feedback_visibility_rules.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "learning"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-048: Grading Feedback Visibility Rules
 
 ## Metadata

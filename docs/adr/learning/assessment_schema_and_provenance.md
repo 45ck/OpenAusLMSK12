@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-021"
+title: "Assessment Schema And Provenance"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[assessment_schema_and_provenance.md](assessment_schema_and_provenance.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "learning"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-021: Assessment Schema And Provenance
 
 ## Metadata

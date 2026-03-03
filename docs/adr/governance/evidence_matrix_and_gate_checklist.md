@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-042"
+title: "Evidence Matrix And Gate Checklist"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[evidence_matrix_and_gate_checklist.md](evidence_matrix_and_gate_checklist.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "governance"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-042: Evidence Matrix And Gate Checklist
 
 ## Metadata

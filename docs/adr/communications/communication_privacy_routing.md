@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-025"
+title: "Communication Privacy Routing"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[communication_privacy_routing.md](communication_privacy_routing.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "communications"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-025: Communication Privacy Routing
 
 ## Metadata

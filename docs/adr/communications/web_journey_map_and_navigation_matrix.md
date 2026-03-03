@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-085"
+title: "Web Journey Map And Navigation Matrix"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[web_journey_map_and_navigation_matrix.md](web_journey_map_and_navigation_matrix.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "communications"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-085: Web Journey Map And Navigation Matrix
 
 ## Metadata

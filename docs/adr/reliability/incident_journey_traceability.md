@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-053"
+title: "Incident Journey Traceability"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[incident_journey_traceability.md](incident_journey_traceability.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "reliability"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-053: Incident Journey Traceability
 
 ## Metadata

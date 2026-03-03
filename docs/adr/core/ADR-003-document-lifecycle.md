@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-003"
+title: "Document Lifecycle and Attachment Governance"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "platform"
+source-artifact: "ADR 003 document lifecycle"
+status-gate: "adr governance"
+domain: "core"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-003 Document Lifecycle and Attachment Governance
 
 ## Status: Accepted

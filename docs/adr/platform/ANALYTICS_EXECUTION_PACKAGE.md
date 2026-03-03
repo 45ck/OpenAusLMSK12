@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-104"
+title: "Analytics Execution Package"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "dashboards, longitudinal analytics, BI extracts, and KPI governance"
+source-artifact: "[ERD_AND_DATA_MODEL.md](../platform/ERD_AND_DATA_MODEL.md), [OPENAUSLMSK12_SYSTEM_BLUEPRINT.md](../platform/OPENAUSLMSK12_SYSTEM_BLUEPRINT.md), [QUALITY_AND_TEST_STRATEGY_MATRIX.md](../platform/QUALITY_AND_TEST_STRATEGY_MATRIX.md), [domain_state_machines.md](../platform/domain_state_machines.md), [IMPLEMENTATION_ROADMAP.md](../platform/IMPLEMENTATION_ROADMAP.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-104: Analytics Execution Package
 
 ## Metadata

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-024"
+title: "Authn Authz Contracts"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[authn_authz_contracts.md](authn_authz_contracts.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "trust"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-024: Authn Authz Contracts
 
 ## Metadata

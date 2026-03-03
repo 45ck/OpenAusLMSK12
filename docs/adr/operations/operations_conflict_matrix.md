@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-065"
+title: "Operations Conflict Matrix"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[operations_conflict_matrix.md](operations_conflict_matrix.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "operations"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-065: Operations Conflict Matrix
 
 ## Metadata

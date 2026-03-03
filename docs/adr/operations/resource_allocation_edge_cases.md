@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-072"
+title: "Resource Allocation Edge Cases"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[resource_allocation_edge_cases.md](resource_allocation_edge_cases.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "operations"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-072: Resource Allocation Edge Cases
 
 ## Metadata

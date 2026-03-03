@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-040"
+title: "Event Evacuation And Contingency Plan"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[event_evacuation_and_contingency_plan.md](event_evacuation_and_contingency_plan.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "operations"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-040: Event Evacuation And Contingency Plan
 
 ## Metadata

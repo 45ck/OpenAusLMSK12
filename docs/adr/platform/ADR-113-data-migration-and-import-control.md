@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-113"
+title: "Data Migration and Import Control"
+status: "accepted"
+decision-date: "2026-03-03"
+scope: "canonical data model implementation and onboarding cohorts"
+source-artifact: "[ERD_AND_DATA_MODEL.md](ERD_AND_DATA_MODEL.md), [DB_IMPLEMENTATION_CHECKLIST.md](DB_IMPLEMENTATION_CHECKLIST.md), [COMPREHENSIVE_PLAN_RESEARCH_DISCOVERY.md](../../COMPREHENSIVE_PLAN_RESEARCH_DISCOVERY.md)"
+status-gate: "security + trust + data ownership review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-113: Data Migration and Import Control
 
 ## Metadata

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-097"
+title: "Finance and Services Execution Package"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "billing, payments, services, contributor flows"
+source-artifact: "[USER_JOURNEY_EXECUTION_GOVERNANCE.md](../platform/USER_JOURNEY_EXECUTION_GOVERNANCE.md), [LOW_FIDELITY_PROTOTYPING_STANDARD.md](../platform/LOW_FIDELITY_PROTOTYPING_STANDARD.md), [finance_billing_state_machine.md](finance_billing_state_machine.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "finance"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-097: Finance and Services Execution Package
 
 ## Metadata

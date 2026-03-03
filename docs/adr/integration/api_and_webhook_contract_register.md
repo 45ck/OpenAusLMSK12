@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-016"
+title: "Api And Webhook Contract Register"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[api_and_webhook_contract_register.md](api_and_webhook_contract_register.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "integration"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-016: Api And Webhook Contract Register
 
 ## Metadata

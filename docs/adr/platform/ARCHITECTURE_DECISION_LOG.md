@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-019"
+title: "Architecture Decision Log"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[ARCHITECTURE_DECISION_LOG.md](ARCHITECTURE_DECISION_LOG.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-019: Architecture Decision Log
 
 ## Metadata

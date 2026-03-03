@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-013"
+title: "Ai Data Classification And Retention"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[ai_data_classification_and_retention.md](ai_data_classification_and_retention.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "trust"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-013: Ai Data Classification And Retention
 
 ## Metadata

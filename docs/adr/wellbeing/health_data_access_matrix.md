@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-049"
+title: "Health Data Access Matrix"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[health_data_access_matrix.md](health_data_access_matrix.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "wellbeing"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-049: Health Data Access Matrix
 
 ## Metadata

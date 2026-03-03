@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-076"
+title: "Route Structure And Component Contracts"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[route_structure_and_component_contracts.md](route_structure_and_component_contracts.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-076: Route Structure And Component Contracts
 
 ## Metadata

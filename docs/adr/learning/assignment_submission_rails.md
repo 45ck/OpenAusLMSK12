@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-022"
+title: "Assignment Submission Rails"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[assignment_submission_rails.md](assignment_submission_rails.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "learning"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-022: Assignment Submission Rails
 
 ## Metadata

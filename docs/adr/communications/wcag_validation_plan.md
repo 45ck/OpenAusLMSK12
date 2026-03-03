@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-084"
+title: "Wcag Validation Plan"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[wcag_validation_plan.md](wcag_validation_plan.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "communications"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-084: Wcag Validation Plan
 
 ## Metadata

@@ -26,6 +26,9 @@ The monorepo is designed around workspaces, with these key scripts:
 - `npm run test` — run workspace tests
 - `npm run format:check` — formatting check
 - `npm run noslop:doctor` — verify gate enforcement files and hooks
+- `npm run adr:validate` — validate structured ADR metadata and contradiction matrix
+- `npm run adr:normalize` — backfill ADR front-matter metadata
+- `npm run adr:emit` — regenerate ADR_REGISTRY and refresh contradiction file
 
 ## Quality gates (45ck/noslop)
 
@@ -42,6 +45,7 @@ npm run noslop:check
 npm run noslop:fast
 npm run noslop:slow
 npm run noslop:doctor
+npm run adr:validate
 ```
 
 ## Documentation
@@ -49,6 +53,9 @@ npm run noslop:doctor
 - [OpenAusLMSK12 Master Plan](docs/OPENAUSLMSK12_MASTER_PLAN.md)
 - [ADR Index](docs/ADR_INDEX.md)
 - [ADR Policy](docs/ADR_POLICY.md)
+- [ADR Registry Schema](docs/adr/ADR_REGISTRY.schema.json)
+- [ADR Registry](docs/adr/ADR_REGISTRY.json)
+- [ADR Contradiction Matrix](docs/adr/ADR_CONTRADICTION_MATRIX.json)
 - [Research corpus](docs/COMPREHENSIVE_PLAN_RESEARCH_DISCOVERY.md)
 - [Initial Research Set](docs/inital-research/)
 

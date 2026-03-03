@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-009"
+title: "Architecture Governance Baseline"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "platform"
+source-artifact: "ADR 009 architecture governance baseline"
+status-gate: "adr governance"
+domain: "core"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-009 Architecture Governance Baseline
 
 ## Status: Accepted

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-074"
+title: "Rollback And Disaster Playbooks"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[rollback_and_disaster_playbooks.md](rollback_and_disaster_playbooks.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "reliability"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-074: Rollback And Disaster Playbooks
 
 ## Metadata

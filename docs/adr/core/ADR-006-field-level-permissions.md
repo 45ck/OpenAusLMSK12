@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-006"
+title: "Field-Level Permissions and Route Contracts"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "platform"
+source-artifact: "ADR 006 field level permissions"
+status-gate: "adr governance"
+domain: "core"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-006 Field-Level Permissions and Route Contracts
 
 ## Status: Accepted

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-091"
+title: "User Journey Execution Governance"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "engineering planning"
+source-artifact: "[FULL_SOFTWARE_ENGINEERING_PLAN.md](FULL_SOFTWARE_ENGINEERING_PLAN.md), [web_journey_map_and_navigation_matrix.md](../communications/web_journey_map_and_navigation_matrix.md)"
+status-gate: "pre-implementation planning"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-091: User Journey Execution Governance
 
 ## Metadata

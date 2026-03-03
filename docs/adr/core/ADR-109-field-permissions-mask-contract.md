@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-109"
+title: "Field Permissions Mask Contract"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "canonical authorization contract for field-level disclosure and redaction"
+source-artifact: "[ADR-006 Field-Level Permissions](ADR-006-field-level-permissions.md), [domain_permissions_matrix.md](../cross-cutting/domain_permissions_matrix.md)"
+status-gate: "implementation approval + API/schema contract review"
+domain: "core"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-109: Field Permissions Mask Contract
 
 ## Metadata

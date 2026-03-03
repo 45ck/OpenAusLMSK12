@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-015"
+title: "Ai Policy And Tenancy Model"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[ai_policy_and_tenancy_model.md](ai_policy_and_tenancy_model.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "trust"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-015: Ai Policy And Tenancy Model
 
 ## Metadata

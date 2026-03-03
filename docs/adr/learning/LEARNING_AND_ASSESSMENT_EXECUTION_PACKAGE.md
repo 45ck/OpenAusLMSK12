@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-096"
+title: "Learning and Assessment Execution Package"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "class content + assignment + grade publication"
+source-artifact: "[USER_JOURNEY_EXECUTION_GOVERNANCE.md](../platform/USER_JOURNEY_EXECUTION_GOVERNANCE.md), [LOW_FIDELITY_PROTOTYPING_STANDARD.md](../platform/LOW_FIDELITY_PROTOTYPING_STANDARD.md), [route_structure_and_component_contracts.md](../platform/route_structure_and_component_contracts.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "learning"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-096: Learning and Assessment Execution Package
 
 ## Metadata

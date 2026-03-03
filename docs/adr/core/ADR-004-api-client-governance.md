@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-004"
+title: "API Client and OAuth Lifecycle"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "platform"
+source-artifact: "ADR 004 api client governance"
+status-gate: "adr governance"
+domain: "core"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-004 API Client and OAuth Lifecycle
 
 ## Status: Accepted

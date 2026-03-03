@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-061"
+title: "Notification Timing And Retry"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[notification_timing_and_retry.md](notification_timing_and_retry.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "communications"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-061: Notification Timing And Retry
 
 ## Metadata

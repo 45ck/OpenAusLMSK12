@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-099"
+title: "Wellbeing and Guardianship Execution Package"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "wellbeing, custody, health notes, incident reporting"
+source-artifact: "[USER_JOURNEY_EXECUTION_GOVERNANCE.md](../platform/USER_JOURNEY_EXECUTION_GOVERNANCE.md), [household_access_model.md](household_access_model.md), [consent_and_household_access_matrix.md](consent_and_household_access_matrix.md), [wellbeing_privacy_and_redaction_model.md](wellbeing_privacy_and_redaction_model.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "trust"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-099: Wellbeing and Guardianship Execution Package
 
 ## Metadata

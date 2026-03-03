@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-050"
+title: "Household Access Model"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[household_access_model.md](household_access_model.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "trust"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-050: Household Access Model
 
 ## Metadata

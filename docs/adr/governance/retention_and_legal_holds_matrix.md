@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-073"
+title: "Retention And Legal Holds Matrix"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[retention_and_legal_holds_matrix.md](retention_and_legal_holds_matrix.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "governance"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-073: Retention And Legal Holds Matrix
 
 ## Metadata

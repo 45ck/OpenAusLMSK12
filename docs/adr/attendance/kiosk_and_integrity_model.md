@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-056"
+title: "Kiosk And Integrity Model"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[kiosk_and_integrity_model.md](kiosk_and_integrity_model.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "attendance"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-056: Kiosk And Integrity Model
 
 ## Metadata

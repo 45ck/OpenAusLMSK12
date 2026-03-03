@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-070"
+title: "Relationship Transition Test Matrix"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[relationship_transition_test_matrix.md](relationship_transition_test_matrix.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "people"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-070: Relationship Transition Test Matrix
 
 ## Metadata

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-064"
+title: "Openauslmsk12 System Blueprint"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[OPENAUSLMSK12_SYSTEM_BLUEPRINT.md](OPENAUSLMSK12_SYSTEM_BLUEPRINT.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-064: Openauslmsk12 System Blueprint
 
 ## Metadata

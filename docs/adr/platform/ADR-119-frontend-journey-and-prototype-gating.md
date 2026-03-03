@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-119"
+title: "Frontend Journey and Prototype Gating"
+status: "accepted"
+decision-date: "2026-03-03"
+scope: "frontend UX, journey validation, and defect-prevention planning"
+source-artifact: "[USER_JOURNEY_EXECUTION_GOVERNANCE.md](USER_JOURNEY_EXECUTION_GOVERNANCE.md), [LOW_FIDELITY_PROTOTYPING_STANDARD.md](LOW_FIDELITY_PROTOTYPING_STANDARD.md), [DIGITAL_MODELING_STANDARD.md](DIGITAL_MODELING_STANDARD.md), [route_structure_and_component_contracts.md](route_structure_and_component_contracts.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-119: Frontend Journey and Prototype Gating
 
 ## Metadata

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-052"
+title: "Incident And Breach Drill Pack"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[incident_and_breach_drill_pack.md](incident_and_breach_drill_pack.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "reliability"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-052: Incident And Breach Drill Pack
 
 ## Metadata

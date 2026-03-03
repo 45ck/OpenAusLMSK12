@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-105"
+title: "AI Governance Execution Package"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "optional AI feature enablement, provider routing, safety controls, and policy-driven governance"
+source-artifact: "[ai_data_classification_and_retention.md](../trust/ai_data_classification_and_retention.md), [ai_moderation_telemetry_plan.md](../trust/ai_moderation_telemetry_plan.md), [ai_policy_and_tenancy_model.md](../trust/ai_policy_and_tenancy_model.md), [ADMISSIONS_ENROLMENT_EXECUTION_PACKAGE.md](../people/ADMISSIONS_ENROLMENT_EXECUTION_PACKAGE.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "trust"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-105: AI Governance Execution Package
 
 ## Metadata

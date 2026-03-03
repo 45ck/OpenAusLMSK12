@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-111"
+title: "Backend Module Catalog Contract Testing"
+status: "accepted"
+decision-date: "2026-03-03"
+scope: "backend API contracts and quality gates"
+source-artifact: "[ModuleCatalogContractTests.cs](../../apps/backend/tests/OpenAusLMSK12.Api.Tests/ModuleCatalogContractTests.cs)"
+status-gate: "ci + noslop"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-111: Backend Module Catalog Contract Testing
 
 ## Metadata

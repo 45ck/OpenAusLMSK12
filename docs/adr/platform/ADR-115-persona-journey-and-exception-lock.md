@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-115"
+title: "Persona Journey and Exception Coverage Lock"
+status: "accepted"
+decision-date: "2026-03-03"
+scope: "UX, journey governance, and failure-path design"
+source-artifact: "[USER_JOURNEY_EXECUTION_GOVERNANCE.md](USER_JOURNEY_EXECUTION_GOVERNANCE.md), [LOW_FIDELITY_PROTOTYPING_STANDARD.md](LOW_FIDELITY_PROTOTYPING_STANDARD.md), [DIGITAL_MODELING_STANDARD.md](DIGITAL_MODELING_STANDARD.md), [route_structure_and_component_contracts.md](route_structure_and_component_contracts.md)"
+status-gate: "journey readiness review + accessibility review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-115: Persona Journey and Exception Coverage Lock
 
 ## Metadata

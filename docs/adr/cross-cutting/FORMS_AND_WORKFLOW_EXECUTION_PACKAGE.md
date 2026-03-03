@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-101"
+title: "Forms And Workflow Execution Package"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "form templates, form workflows, approvals, and automated process orchestration"
+source-artifact: "[FORM_SCHEMA_REFERENCE.md](../learning/form_schema_reference.md), [workflow_escalation_formalization.md](../operations/workflow_escalation_formalization.md), [saga_and_compensation_behavior.md](../operations/saga_and_compensation_behavior.md), [OPERATIONS_EVENTS_EXECUTION_PACKAGE.md](../operations/OPERATIONS_EVENTS_EXECUTION_PACKAGE.md), [OPENAUSLMSK12_MASTER_PLAN.md](../../OPENAUSLMSK12_MASTER_PLAN.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "cross-cutting"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-101: Forms And Workflow Execution Package
 
 ## Metadata

@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-051"
+title: "Implementation Roadmap"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[IMPLEMENTATION_ROADMAP.md](IMPLEMENTATION_ROADMAP.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-051: Implementation Roadmap
 
 ## Metadata

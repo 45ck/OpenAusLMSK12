@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-118"
+title: "Planning Contradiction and Resolution Register"
+status: "accepted"
+decision-date: "2026-03-03"
+scope: "architecture governance and implementation readiness"
+source-artifact: "[AGENT_REVIEW_SUMMARY.md](../governance/AGENT_REVIEW_SUMMARY.md), [ADR-112](ADR-112-research-and-implementation-readiness-gate.md), [ADR-116](ADR-116-release-handover-and-wave-gates.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "platform"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-118: Planning Contradiction and Resolution Register
 
 ## Metadata

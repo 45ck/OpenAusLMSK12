@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-032"
+title: "Constraint Resolution Policy"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[constraint_resolution_policy.md](constraint_resolution_policy.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "operations"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-032: Constraint Resolution Policy
 
 ## Metadata

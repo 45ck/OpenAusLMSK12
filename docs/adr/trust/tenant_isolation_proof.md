@@ -1,3 +1,18 @@
+---
+adr-id: "ADR-082"
+title: "Tenant Isolation Proof"
+status: "accepted"
+decision-date: "2026-03-02"
+scope: "normalized engineering decision record"
+source-artifact: "[tenant_isolation_proof.md](tenant_isolation_proof.md)"
+status-gate: "planning corpus + ADR governance review"
+domain: "trust"
+depends-on: []
+supersedes: []
+superseded-by: []
+conflicts-with: []
+---
+
 # ADR-082: Tenant Isolation Proof
 
 ## Metadata

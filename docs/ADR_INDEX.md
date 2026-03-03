@@ -125,6 +125,7 @@ Top-level planning and execution artifacts are normalized with ADR headers (ADR-
 - [ADR-117 Research To Design Traceability](adr/platform/ADR-117-research-to-design-traceability.md)
 - [ADR-118 Planning Contradiction and Resolution Register](adr/platform/ADR-118-planning-contradiction-and-resolution-register.md)
 - [ADR-119 Frontend Journey and Prototype Gating](adr/platform/ADR-119-frontend-journey-and-prototype-gating.md)
+- [ADR-120 Structured ADR Registry and Contradiction Gating](adr/platform/ADR-120-structured-adr-registry-and-contradiction-gating.md)
 
 # Governance inspection reports are no longer retained in-repo; ADR governance is continuous via `ADR_INDEX.md` and `ADR_POLICY.md`.
 
